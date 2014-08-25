@@ -4,7 +4,7 @@ import web
 from logger import *
 from functions import *
 from threads import *
-import subprocess
+from config import *
 
 class index:
     def POST(self):
@@ -28,36 +28,26 @@ class index:
                 rtsp = cursor.fetchone()[0]
                 db.close()
 
-                rtmp = "rtmp://" + RTMP_ROOT + "/live/camera-" + str(deviceid)              
+                rtmp = RTMP_ROOT + "/live/camera-" + str(deviceid)              
                 livethread = liveThread(deviceid, rtmp, rtsp)
                 livethread.start()
                 
             elif method == "stoplive":
                 deviceid = int(web.input().deviceid)      
 
+            elif method == "startrecord":
+                deviceid = int(web.input().deviceid)    
+
+            elif method == "stoprecord":
+                deviceid = int(web.input().deviceid)      
+
             elif method == "delete":
-                #TODO: Stop all threads
                 deviceid = int(web.input().deviceid)       
                 db = eval(MYSQL_CONNECT_CMD)
                 cursor = db.cursor()
                 cmd = "DELETE FROM devices WHERE deviceid = '%s';" % deviceid
                 cursor.execute(cmd)
                 db.close()    
-
-            elif method == "modify":
-                deviceid = int(web.input().deviceid)    
-                rtsp = str(web.input().rtsp)      
-
-                db = eval(MYSQL_CONNECT_CMD)
-                cursor = db.cursor()
-                cmd = "SELECT rtsp FROM devices WHERE deviceid = '%s';" % deviceid
-                cursor.execute(cmd)
-                oldrtsp = cursor.fetchone()[0]
-                if rtsp != oldrtsp:
-                    #TODO: Stop all now threads, and start new.
-                    cmd = "UPDATE devices SET rtsp = '%s' WHERE deviceid = '%s';" % (rtsp, deviceid)
-                    cursor.execute(cmd)
-                db.close()   
 
             else:
                 return "未提供的方法"

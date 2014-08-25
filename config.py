@@ -34,4 +34,5 @@ FILE_ROOT = "http://" + SERVER_IP + ":" + str(FILE_PORT)
 
 live_pending_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) +   "/api?method=livepending"
 live_started_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) +   "/api?method=livestarted"
-record_start_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordstarted"
+record_pending_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordpending"
+record_started_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordstarted"

@@ -4,7 +4,6 @@
 import threading
 import subprocess
 import time
-import cPickle
 from logger import *
 from config import *
 from functions import *
@@ -22,6 +21,7 @@ class liveThread(threading.Thread):
             child = subprocess.Popen(self.cmd, stdout = subprocess.PIPE, stderr = subprocess.PIPE, shell = True)
             count = 0
             while True:
+                #以读取到ffmpeg进程持续输出为标志
                 time.sleep(1)
                 rubbish = child.stderr.readline()
                 count += 1
