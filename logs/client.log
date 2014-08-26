@@ -1,40 +1,11 @@
-2014-08-20 23:49:14,349 INFO invalid literal for int() with base 10: "'74'"
-2014-08-20 23:49:53,582 INFO invalid literal for int() with base 10: "'75'"
-2014-08-25 18:18:20,545 INFO name 'MySQLdb' is not defined
-2014-08-25 18:19:02,166 INFO name 'MySQLdb' is not defined
-2014-08-25 18:19:23,365 INFO name 'MySQLdb' is not defined
-2014-08-25 18:20:28,878 INFO name 'MySQLdb' is not defined
-2014-08-25 18:21:31,110 INFO name 'MySQLdb' is not defined
-2014-08-25 18:21:59,294 INFO name 'MySQLdb' is not defined
-2014-08-25 18:22:21,815 INFO name 'MySQLdb' is not defined
-2014-08-25 18:22:50,192 INFO name 'MySQLdb' is not defined
-2014-08-25 18:23:11,315 INFO name 'MySQLdb' is not defined
-2014-08-25 18:24:03,294 INFO name 'MySQLdb' is not defined
-2014-08-25 18:24:37,169 INFO name 'MySQLdb' is not defined
-2014-08-25 18:25:22,550 INFO name 'MySQLdb' is not defined
-2014-08-25 18:35:41,147 INFO local variable 'db' referenced before assignment
-2014-08-25 18:50:07,217 INFO global name 'sendRequest' is not defined
-2014-08-25 18:50:40,647 INFO global name 'sendRequest' is not defined
-2014-08-25 19:31:12,432 INFO %d format: a number is required, not str
-2014-08-25 19:32:38,407 INFO %d format: a number is required, not str
-2014-08-25 19:48:14,011 INFO not enough arguments for format string
-2014-08-25 20:09:33,415 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:09:38,420 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:10:34,797 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:10:39,802 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:10:44,808 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:10:49,813 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:10:54,817 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:10:59,822 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:11:04,827 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:11:09,833 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:11:14,835 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:11:19,840 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:11:24,845 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:11:29,850 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:11:34,856 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:11:39,861 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:11:44,867 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:11:49,872 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:11:54,877 INFO !!!!!!!!!!!!!!!!!!
-2014-08-25 20:38:04,438 INFO global name 'rtsp' is not defined
+2014-08-26 14:09:53,218 INFO 102
+2014-08-26 14:13:40,771 INFO 102
+2014-08-26 15:38:29,788 INFO local variable 'recordThread' referenced before assignment
+2014-08-26 15:41:35,902 INFO 102
+2014-08-26 15:58:07,013 INFO 102
+2014-08-26 17:15:07,442 INFO 102
+2014-08-26 17:40:15,853 INFO 'str' object has no attribute 'kill'
+2014-08-26 21:23:02,148 INFO 102
+2014-08-26 21:23:04,054 INFO 102
+2014-08-26 21:32:16,838 INFO 102
+2014-08-26 21:33:43,857 INFO 102

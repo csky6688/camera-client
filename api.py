@@ -33,13 +33,32 @@ class index:
                 livethread.start()
                 
             elif method == "stoplive":
-                deviceid = int(web.input().deviceid)      
+                deviceid = int(web.input().deviceid) 
+                child = livemap[deviceid]
+                livemap[deviceid] = "STOP"
+                child.kill()
 
             elif method == "startrecord":
                 deviceid = int(web.input().deviceid)    
+                db = eval(MYSQL_CONNECT_CMD)
+                cursor = db.cursor()
+                cmd = "SELECT rtsp FROM devices WHERE deviceid = '%s';" % deviceid
+                cursor.execute(cmd)
+                rtsp = cursor.fetchone()[0]
+                db.close()
+       
+                recordthread = recordThread(deviceid, rtsp)
+                recordthread.start()
+
+                filethread = saveRecordFileThread()
+                filethread.start()
 
             elif method == "stoprecord":
                 deviceid = int(web.input().deviceid)      
+                child = recordmap[deviceid]
+                recordmap[deviceid] = "STOP"
+                child.terminate()
+
 
             elif method == "delete":
                 deviceid = int(web.input().deviceid)       
