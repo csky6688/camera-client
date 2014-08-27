@@ -32,6 +32,7 @@ RECORD_INTERVAL = 3600
 SERVER_IP = "127.0.0.1"
 LOCAL_IP = "121.49.97.4"
 SERVER_PORT = 8087
+LOCAL_PORT = 8086
 RTMP_PORT = 8085
 FILE_PORT = 8084
 RTMP_ROOT = "rtmp://" + LOCAL_IP + ":" + str(RTMP_PORT)
@@ -39,9 +40,13 @@ FILE_ROOT = "http://" + LOCAL_IP + ":" + str(FILE_PORT) + "/videos/"
 
 live_pending_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) +   "/api?method=livepending"
 live_started_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) +   "/api?method=livestarted"
+live_stop_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) +   "/api?method=livestop"
 record_pending_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordpending"
 record_started_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordstarted"
+record_stop_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordstop"
 record_add_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordadd"
 
 livemap = {}
 recordmap = {}
+
+globalthreads = []

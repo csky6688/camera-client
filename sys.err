@@ -1,0 +1,317 @@
+Traceback (most recent call last):
+  File "/home/camera/camera-client/main.py", line 57, in <module>
+    app.run()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1765, in start
+    self.tick()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1800, in tick
+    s, addr = self.socket.accept()
+  File "/usr/lib/python2.7/socket.py", line 202, in accept
+    sock, addr = self._sock.accept()
+  File "/home/camera/camera-client/main.py", line 13, in exit_handler
+    logger.info("TEST!")
+NameError: global name 'logger' is not defined
+127.0.0.1:57109 - - [27/Aug/2014 13:27:58] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57114 - - [27/Aug/2014 13:29:20] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57115 - - [27/Aug/2014 13:37:47] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57118 - - [27/Aug/2014 13:37:53] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57142 - - [27/Aug/2014 13:38:57] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57144 - - [27/Aug/2014 13:39:17] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57147 - - [27/Aug/2014 13:42:37] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57150 - - [27/Aug/2014 13:42:39] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57155 - - [27/Aug/2014 13:43:45] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57157 - - [27/Aug/2014 13:43:48] "HTTP/1.1 POST api" - 200 OK
+Traceback (most recent call last):
+  File "/home/camera/camera-client/main.py", line 69, in <module>
+    pidfile.write(str(os.getpid()))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1765, in start
+    self.tick()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1800, in tick
+    s, addr = self.socket.accept()
+  File "/usr/lib/python2.7/socket.py", line 202, in accept
+    sock, addr = self._sock.accept()
+  File "/home/camera/camera-client/main.py", line 19, in exit_handler
+    msg = "deviceid=%d" % int(everyone)
+NameError: global name 'sendRequest' is not defined
+127.0.0.1:57164 - - [27/Aug/2014 13:47:41] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57165 - - [27/Aug/2014 13:47:43] "HTTP/1.1 POST api" - 200 OK
+Traceback (most recent call last):
+  File "/home/camera/camera-client/main.py", line 72, in <module>
+    app.run()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1753, in start
+    raise socket.error(msg)
+socket.error: No socket could be created
+sh: 1: kill: No such process
+
+127.0.0.1:57166 - - [27/Aug/2014 13:52:49] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57167 - - [27/Aug/2014 13:54:27] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57168 - - [27/Aug/2014 13:54:33] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57169 - - [27/Aug/2014 13:55:01] "HTTP/1.1 POST api" - 200 OK
+Traceback (most recent call last):
+  File "/home/camera/camera-client/main.py", line 72, in <module>
+    app.run()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1753, in start
+    raise socket.error(msg)
+socket.error: No socket could be created
+127.0.0.1:57170 - - [27/Aug/2014 13:55:48] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57172 - - [27/Aug/2014 13:55:52] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57174 - - [27/Aug/2014 13:55:59] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57177 - - [27/Aug/2014 13:56:06] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57188 - - [27/Aug/2014 14:00:26] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57190 - - [27/Aug/2014 14:00:29] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57193 - - [27/Aug/2014 14:00:31] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57196 - - [27/Aug/2014 14:00:44] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57198 - - [27/Aug/2014 14:00:47] "HTTP/1.1 POST api" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 416, in _delegate
+    mod = __import__(mod, None, None, [''])
+  File "/home/camera/camera-client/api.py", line 6, in <module>
+    from threads import *
+  File "/home/camera/camera-client/threads.py", line 119
+    print 'SAVE!'
+        ^
+IndentationError: expected an indented block
+
+127.0.0.1:57209 - - [27/Aug/2014 14:09:49] "HTTP/1.1 POST api" - 500 Internal Server Error
+127.0.0.1:57210 - - [27/Aug/2014 14:12:16] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57213 - - [27/Aug/2014 14:13:05] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57215 - - [27/Aug/2014 14:13:07] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57222 - - [27/Aug/2014 14:25:24] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57229 - - [27/Aug/2014 14:28:44] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57233 - - [27/Aug/2014 14:58:55] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57235 - - [27/Aug/2014 14:58:57] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57240 - - [27/Aug/2014 15:12:40] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57245 - - [27/Aug/2014 15:20:01] "HTTP/1.1 POST api" - 200 OK
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 551, in __bootstrap_inner
+    self.run()
+  File "/home/camera/camera-client/threads.py", line 78, in run
+    self.requestPending()
+  File "/home/camera/camera-client/threads.py", line 97, in requestPending
+    sendRequest(msg, SERVER_IP, SERVER_PORT, record_pending_api, "POST")
+NameError: global name 'sendRequest' is not defined
+
+127.0.0.1:57246 - - [27/Aug/2014 15:21:33] "HTTP/1.1 POST api" - 200 OK
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 551, in __bootstrap_inner
+    self.run()
+  File "/home/camera/camera-client/threads.py", line 82, in run
+    recordmap[self.deviceid] = child
+NameError: global name 'recordmap' is not defined
+
+127.0.0.1:57251 - - [27/Aug/2014 15:23:24] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57253 - - [27/Aug/2014 15:23:32] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57260 - - [27/Aug/2014 15:29:25] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57266 - - [27/Aug/2014 15:31:35] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57270 - - [27/Aug/2014 15:37:14] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57273 - - [27/Aug/2014 15:37:20] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57282 - - [27/Aug/2014 15:46:45] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57285 - - [27/Aug/2014 15:47:42] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57287 - - [27/Aug/2014 15:47:44] "HTTP/1.1 POST api" - 200 OK
+Traceback (most recent call last):
+  File "/home/camera/camera-client/main.py", line 85, in <module>
+    app.run()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1765, in start
+    self.tick()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1800, in tick
+    s, addr = self.socket.accept()
+  File "/usr/lib/python2.7/socket.py", line 202, in accept
+    sock, addr = self._sock.accept()
+  File "/home/camera/camera-client/main.py", line 39, in exit_handler
+    logger.info(filethread)
+NameError: global name 'filethread' is not defined
+127.0.0.1:57290 - - [27/Aug/2014 15:52:41] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57292 - - [27/Aug/2014 15:52:43] "HTTP/1.1 POST api" - 200 OK
+Traceback (most recent call last):
+  File "/home/camera/camera-client/main.py", line 84, in <module>
+    app.run()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1765, in start
+    self.tick()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1800, in tick
+    s, addr = self.socket.accept()
+  File "/usr/lib/python2.7/socket.py", line 202, in accept
+    sock, addr = self._sock.accept()
+  File "/home/camera/camera-client/main.py", line 39, in exit_handler
+    recordfilethread = saveRecordFileThread()
+  File "/home/camera/camera-client/threads.py", line 117, in __new__
+    orig = super()
+TypeError: super() takes at least 1 argument (0 given)
+127.0.0.1:57296 - - [27/Aug/2014 15:55:51] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57301 - - [27/Aug/2014 15:57:24] "HTTP/1.1 POST api" - 200 OK
+Traceback (most recent call last):
+  File "/home/camera/camera-client/main.py", line 84, in <module>
+    app.run()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1765, in start
+    self.tick()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1800, in tick
+    s, addr = self.socket.accept()
+  File "/usr/lib/python2.7/socket.py", line 202, in accept
+    sock, addr = self._sock.accept()
+  File "/home/camera/camera-client/main.py", line 39, in exit_handler
+    recordfilethread.join()
+  File "/usr/lib/python2.7/threading.py", line 656, in join
+    raise RuntimeError("cannot join thread before it is started")
+RuntimeError: cannot join thread before it is started
+127.0.0.1:57306 - - [27/Aug/2014 16:02:04] "HTTP/1.1 POST api" - 200 OK
+Traceback (most recent call last):
+  File "/home/camera/camera-client/main.py", line 83, in <module>
+    app.run()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1765, in start
+    self.tick()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1800, in tick
+    s, addr = self.socket.accept()
+  File "/usr/lib/python2.7/socket.py", line 202, in accept
+    sock, addr = self._sock.accept()
+  File "/home/camera/camera-client/main.py", line 38, in exit_handler
+    recordfilethread.stop()
+  File "/home/camera/camera-client/threads.py", line 125, in stop
+    self.join()
+  File "/usr/lib/python2.7/threading.py", line 656, in join
+    raise RuntimeError("cannot join thread before it is started")
+RuntimeError: cannot join thread before it is started
+127.0.0.1:57311 - - [27/Aug/2014 16:05:14] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57318 - - [27/Aug/2014 16:09:05] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57326 - - [27/Aug/2014 16:11:37] "HTTP/1.1 POST api" - 200 OK
+Traceback (most recent call last):
+  File "/home/camera/camera-client/main.py", line 84, in <module>
+    app.run()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1765, in start
+    self.tick()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1800, in tick
+    s, addr = self.socket.accept()
+  File "/usr/lib/python2.7/socket.py", line 202, in accept
+    sock, addr = self._sock.accept()
+  File "/home/camera/camera-client/main.py", line 39, in exit_handler
+    recordfilethread.join()
+  File "/usr/lib/python2.7/threading.py", line 656, in join
+    raise RuntimeError("cannot join thread before it is started")
+RuntimeError: cannot join thread before it is started
+127.0.0.1:57331 - - [27/Aug/2014 16:16:09] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57338 - - [27/Aug/2014 16:22:35] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57347 - - [27/Aug/2014 16:32:51] "HTTP/1.1 POST api" - 200 OK
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 551, in __bootstrap_inner
+    self.run()
+  File "/home/camera/camera-client/threads.py", line 167, in run
+    self.runonce()
+  File "/home/camera/camera-client/threads.py", line 127, in runonce
+    if self.working:
+AttributeError: 'saveRecordFileThread' object has no attribute 'working'
+
+Traceback (most recent call last):
+  File "/home/camera/camera-client/main.py", line 88, in <module>
+    app.run()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1765, in start
+    self.tick()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1800, in tick
+    s, addr = self.socket.accept()
+  File "/usr/lib/python2.7/socket.py", line 202, in accept
+    sock, addr = self._sock.accept()
+  File "/home/camera/camera-client/main.py", line 44, in exit_handler
+    recordfilethread.runonce()
+  File "/home/camera/camera-client/threads.py", line 127, in runonce
+    if self.working:
+AttributeError: 'saveRecordFileThread' object has no attribute 'working'
+127.0.0.1:57351 - - [27/Aug/2014 16:35:01] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57355 - - [27/Aug/2014 16:39:01] "HTTP/1.1 POST api" - 200 OK
+Traceback (most recent call last):
+  File "/home/camera/camera-client/main.py", line 82, in <module>
+    app.run()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1765, in start
+    self.tick()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1800, in tick
+    s, addr = self.socket.accept()
+  File "/usr/lib/python2.7/socket.py", line 202, in accept
+    sock, addr = self._sock.accept()
+  File "/home/camera/camera-client/main.py", line 17, in exit_handler
+    logger.info(THREAD_RUNNING)
+NameError: global name 'THREAD_RUNNING' is not defined
+127.0.0.1:57358 - - [27/Aug/2014 16:39:34] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57360 - - [27/Aug/2014 16:39:36] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57364 - - [27/Aug/2014 16:40:35] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57369 - - [27/Aug/2014 16:41:38] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57374 - - [27/Aug/2014 16:42:15] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57381 - - [27/Aug/2014 16:44:30] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57388 - - [27/Aug/2014 16:47:01] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57396 - - [27/Aug/2014 16:50:18] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57399 - - [27/Aug/2014 16:50:24] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57405 - - [27/Aug/2014 16:54:53] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57407 - - [27/Aug/2014 16:54:57] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57410 - - [27/Aug/2014 16:55:13] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57413 - - [27/Aug/2014 16:55:19] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57456 - - [27/Aug/2014 18:07:19] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57458 - - [27/Aug/2014 18:07:22] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57470 - - [27/Aug/2014 18:08:38] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:57473 - - [27/Aug/2014 18:08:43] "HTTP/1.1 POST api" - 200 OK

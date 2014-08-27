@@ -52,7 +52,6 @@ class liveThread(threading.Thread):
         msg = "deviceid=%d" % (self.deviceid)
         sendRequest(msg, SERVER_IP, SERVER_PORT, live_started_api, "POST")
 
-
 class recordThread(threading.Thread):
     def __init__(self, deviceid, rtsp):
         threading.Thread.__init__(self)
@@ -104,6 +103,8 @@ class saveRecordFileThread(threading.Thread):
     def __init__(self):
         threading.Thread.__init__(self)
         self.tmpdirs = VIDEO_PATH + "tmp/"
+        self.running = True
+        self.working = False
 
     def getfiles(self, rootdir):
         for lists in os.listdir(rootdir):
@@ -113,44 +114,49 @@ class saveRecordFileThread(threading.Thread):
             else:
                 self.files.append(path)
 
+    def stop(self):
+        self.running = False
+
+    def runonce(self):
+        try:
+            self.files = []
+            self.getfiles(self.tmpdirs)
+            for everyone in self.files:
+                deviceid = int(os.path.basename(everyone).split("-")[0])
+                child = subprocess.Popen(["avprobe", everyone], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+                for x in child.stderr.readlines():
+                    if "Duration" in x:
+                        faststart = subprocess.Popen(["qt-faststart", everyone, everyone + ".new"], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+                        faststart.wait()
+                        os.remove(everyone)
+                        everyone = everyone + ".new"
+                        duration = x.split(" ")[3].split(",")[0]
+                        h = float(duration.split(":")[0])
+                        m = float(duration.split(":")[1])
+                        s = float(duration.split(":")[2])
+                        duration = h * 3600 + m * 60 + s 
+                        end = float(os.stat(everyone).st_ctime)
+                        start = end - duration
+                        filename = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime(start)) + ".mp4"
+                        start = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(start))
+                        end = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(end))
+
+                        newname = VIDEO_PATH + str(deviceid) + "/" + str(filename)
+                        
+                        try:
+                            os.makedirs(VIDEO_PATH + str(deviceid))
+                        except Exception, e:
+                            pass
+                        os.rename(everyone, newname)
+                        self.requestNewRecord(deviceid, duration, start, end, os.path.basename(filename))
+
+        except Exception, e:
+            print str(e)
+
     def run(self):
-        while True:
-            try:
-                self.files = []
-                self.getfiles(self.tmpdirs)
-                for everyone in self.files:
-                    deviceid = int(os.path.basename(everyone).split("-")[0])
-                    child = subprocess.Popen(["avprobe", everyone], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
-                    for x in child.stderr.readlines():
-                        if "Duration" in x:
-                            faststart = subprocess.Popen(["qt-faststart", everyone, everyone + ".new"], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
-                            faststart.wait()
-                            os.remove(everyone)
-                            everyone = everyone + ".new"
-                            duration = x.split(" ")[3].split(",")[0]
-                            h = float(duration.split(":")[0])
-                            m = float(duration.split(":")[1])
-                            s = float(duration.split(":")[2])
-                            duration = h * 3600 + m * 60 + s 
-                            end = float(os.stat(everyone).st_ctime)
-                            start = end - duration
-                            filename = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime(start)) + ".mp4"
-                            start = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(start))
-                            end = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(end))
-
-                            newname = VIDEO_PATH + str(deviceid) + "/" + str(filename)
-                            
-                            try:
-                                os.makedirs(VIDEO_PATH + str(deviceid))
-                            except Exception, e:
-                                pass
-                            os.rename(everyone, newname)
-                            self.requestNewRecord(deviceid, duration, start, end, os.path.basename(filename))
-
-                time.sleep(10)
-
-            except Exception, e:
-                print  str(e)
+        while self.running == True:
+            self.runonce()
+            time.sleep(3)
 
     def requestNewRecord(self, deviceid, duration, start, end, filename):
         path = FILE_ROOT + str(deviceid) + "/"

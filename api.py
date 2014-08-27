@@ -34,9 +34,15 @@ class index:
                 
             elif method == "stoplive":
                 deviceid = int(web.input().deviceid) 
-                child = livemap[deviceid]
-                livemap[deviceid] = "STOP"
-                child.kill()
+                try:
+                    child = livemap[deviceid]
+                    livemap[deviceid] = "STOP"
+                    child.terminate()
+                except Exception, e:
+                    print str(e)
+
+                msg = "deviceid=%d" % int(deviceid)
+                sendRequest(msg, SERVER_IP, SERVER_PORT, live_stop_api, "POST")
 
             elif method == "startrecord":
                 deviceid = int(web.input().deviceid)    
@@ -50,15 +56,17 @@ class index:
                 recordthread = recordThread(deviceid, rtsp)
                 recordthread.start()
 
-                filethread = saveRecordFileThread()
-                filethread.start()
-
             elif method == "stoprecord":
-                deviceid = int(web.input().deviceid)      
-                child = recordmap[deviceid]
-                recordmap[deviceid] = "STOP"
-                child.terminate()
+                deviceid = int(web.input().deviceid)  
+                try:    
+                    child = recordmap[deviceid]
+                    recordmap[deviceid] = "STOP"
+                    child.terminate()
+                except Exception, e:
+                    print str(e)
 
+                msg = "deviceid=%d" % int(deviceid)
+                sendRequest(msg, SERVER_IP, SERVER_PORT, record_stop_api, "POST")
 
             elif method == "delete":
                 deviceid = int(web.input().deviceid)       
