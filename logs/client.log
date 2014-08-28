@@ -4,3 +4,197 @@
 2014-08-27 16:40:38,610 INFO [<saveRecordFileThread(Thread-12, started 140436488312576)>]
 2014-08-27 16:42:15,716 INFO Wed Aug 27 16:42:15 2014
 2014-08-27 16:42:35,736 INFO Wed Aug 27 16:42:35 2014
+2014-08-28 13:34:05,762 INFO execv() arg 2 must contain only strings
+2014-08-28 13:35:14,893 INFO execv() arg 2 must contain only strings
+2014-08-28 13:35:17,951 INFO execv() arg 2 must contain only strings
+2014-08-28 13:36:00,159 INFO execv() arg 2 must contain only strings
+2014-08-28 13:36:02,950 INFO [Errno 2] No such file or directory: '/home/camera/www/videos/tmp/107/107-01.mp4.new.new'
+2014-08-28 13:37:12,114 INFO [Errno 2] No such file or directory
+2014-08-28 13:38:06,394 INFO [Errno 2] No such file or directory
+2014-08-28 13:39:06,701 INFO [Errno 2] No such file or directory
+2014-08-28 13:40:04,009 INFO [Errno 2] No such file or directory
+2014-08-28 13:40:55,279 INFO [Errno 2] No such file or directory
+2014-08-28 13:56:27,458 INFO OLD DURATION: 00:01:00.73
+2014-08-28 13:56:27,458 INFO NEW DURATION: 59
+2014-08-28 13:57:24,790 INFO OLD DURATION: 00:00:59.73
+2014-08-28 13:57:24,790 INFO NEW DURATION: 58
+2014-08-28 13:58:25,135 INFO OLD DURATION: 00:00:59.73
+2014-08-28 13:58:25,135 INFO NEW DURATION: 58
+2014-08-28 13:58:46,317 INFO OLD DURATION: 00:00:19.73
+2014-08-28 13:58:46,317 INFO NEW DURATION: 18
+2014-08-28 16:24:21,759 INFO INSERT INTO devices(deviceid, rtsp) VALUES (108, 'rtsp://222.197.180.250:50000/video0.sdp');
+2014-08-28 16:25:20,684 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, 'test');
+2014-08-28 16:25:30,491 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, 'test1');
+2014-08-28 16:25:46,553 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, 'rtsp://222.197.180.250:50000/video0.sdp');
+2014-08-28 16:26:04,934 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, 'rtsp://222.197.180.250:50000/video0.sdp');
+2014-08-28 16:28:14,131 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, 'werwer');
+2014-08-28 16:28:23,814 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, '123123');
+2014-08-28 16:28:36,773 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, '1');
+2014-08-28 16:28:51,495 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, 'rtsp://222.197.180.250:50000/video0.sdp');
+2014-08-28 16:28:58,997 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, 'test');
+2014-08-28 16:29:53,224 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, 'test');
+2014-08-28 16:29:59,926 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, 'test');
+2014-08-28 16:30:06,625 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, '121312321');
+2014-08-28 16:30:13,566 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, 'test');
+2014-08-28 16:30:22,696 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, 'test123123123');
+2014-08-28 16:30:29,024 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, 'test');
+2014-08-28 16:30:41,209 INFO INSERT INTO devices(deviceid, rtsp) VALUES (109, 'rtsp://222.197.180.250:50000/video0.sdp');
+2014-08-28 16:31:30,249 INFO 'NoneType' object has no attribute '__getitem__'
+2014-08-28 16:37:36,194 INFO DELETE FROM devices WHERE deviceid = '110';
+2014-08-28 16:38:48,396 INFO DELETE FROM devices WHERE deviceid = '111';
+2014-08-28 17:15:00,707 INFO DELETE FROM devices WHERE deviceid = '113';
+2014-08-28 17:40:37,112 INFO unsupported operand type(s) for -: 'float' and 'str'
+2014-08-28 17:40:40,154 INFO unsupported operand type(s) for -: 'float' and 'str'
+2014-08-28 17:41:37,432 INFO unsupported operand type(s) for -: 'float' and 'str'
+2014-08-28 17:41:40,473 INFO unsupported operand type(s) for -: 'float' and 'str'
+2014-08-28 17:41:58,572 INFO unsupported operand type(s) for -: 'float' and 'str'
+2014-08-28 17:42:01,297 INFO [Errno 2] No such file or directory
+2014-08-28 18:00:20,317 INFO [Errno 2] No such file or directory: '/home/camera/www/videos/tmp/'
+2014-08-28 18:00:23,320 INFO [Errno 2] No such file or directory: '/home/camera/www/videos/tmp/'
+2014-08-28 18:00:26,324 INFO [Errno 2] No such file or directory: '/home/camera/www/videos/tmp/'
+2014-08-28 18:00:29,327 INFO [Errno 2] No such file or directory: '/home/camera/www/videos/tmp/'
+2014-08-28 18:00:32,330 INFO [Errno 2] No such file or directory: '/home/camera/www/videos/tmp/'
+2014-08-28 18:00:35,333 INFO [Errno 2] No such file or directory: '/home/camera/www/videos/tmp/'
+2014-08-28 18:01:38,500 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:01:41,557 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:01:44,613 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:01:47,670 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:01:50,727 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:01:53,788 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:01:56,845 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:01:59,906 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:02,963 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:06,021 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:09,079 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:12,136 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:15,193 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:18,250 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:21,307 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:24,364 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:27,418 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:30,475 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:33,532 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:36,571 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:39,612 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:42,653 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:45,694 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:48,736 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:51,775 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:54,817 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:02:57,858 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:03:00,899 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:03:03,941 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:03:06,982 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:03:10,024 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:03:13,066 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:03:16,107 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:03:19,148 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:03:22,189 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:03:25,230 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:03:28,271 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:03:31,303 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:04:50,912 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:04:53,966 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:04:57,019 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:00,072 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:03,124 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:06,177 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:09,230 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:12,283 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:15,336 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:18,389 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:21,442 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:24,494 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:27,547 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:30,599 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:33,652 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:36,705 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:39,757 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:42,810 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:45,863 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:48,915 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:51,953 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:54,991 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:05:58,028 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:01,069 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:04,107 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:07,145 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:10,183 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:13,221 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:16,258 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:19,297 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:22,335 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:25,373 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:28,410 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:31,448 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:34,487 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:37,525 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:40,563 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:43,601 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:46,654 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:49,692 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:52,722 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:55,752 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:06:58,783 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:01,813 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:04,843 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:07,873 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:10,903 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:13,934 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:16,964 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:19,994 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:23,024 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:26,052 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:29,082 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:32,129 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:35,159 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:38,188 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:41,218 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:44,249 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:47,279 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:50,310 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:53,340 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:56,372 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:07:59,418 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:02,448 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:05,479 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:08,510 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:11,540 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:14,571 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:17,601 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:20,632 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:23,662 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:26,692 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:29,723 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:32,754 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:35,784 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:38,814 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:41,845 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:44,875 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:47,906 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:50,937 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:53,967 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:08:56,998 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:09:00,028 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:09:03,058 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:09:06,089 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:09:09,119 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:09:12,149 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:09:15,180 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:09:18,211 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:09:21,258 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:09:24,288 INFO invalid literal for int() with base 10: 'None'
+2014-08-28 18:11:03,654 INFO global name 'deviceid' is not defined
+2014-08-28 18:11:30,310 INFO global name 'deviceid' is not defined
+2014-08-28 21:35:11,517 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'
+2014-08-28 21:35:14,565 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'
+2014-08-28 21:35:17,614 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'
+2014-08-28 21:35:20,661 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'
+2014-08-28 21:35:23,709 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'
+2014-08-28 21:35:26,757 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'
+2014-08-28 21:35:29,806 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'
+2014-08-28 21:35:32,855 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'
+2014-08-28 21:35:35,903 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'
+2014-08-28 21:35:38,951 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'
+2014-08-28 21:35:41,999 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'
+2014-08-28 21:35:45,024 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'

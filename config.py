@@ -19,6 +19,8 @@ urls = (
     site_prefix + 'api',             'api.index',
 )
 
+FFMPEG_BIN = "/home/camera/ffmpeg/ffmpeg"
+FFPROBE_BIN = "/home/camera/ffmpeg/ffprobe"
 PROGRAM_ROOT = "/home/camera/camera-client/"
 CAMERA_LOG = PROGRAM_ROOT + "logs/"
 logfile = PROGRAM_ROOT + "logs/client.log"
@@ -44,7 +46,7 @@ live_stop_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) +   "/api?method=l
 record_pending_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordpending"
 record_started_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordstarted"
 record_stop_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordstop"
-record_add_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordadd"
+record_file_ready_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordfileready"
 
 livemap = {}
 recordmap = {}

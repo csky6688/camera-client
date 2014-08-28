@@ -19,6 +19,15 @@ class index:
                 cursor.execute(cmd)
                 db.close()
 
+            elif method == "update":
+                deviceid = int(web.input().deviceid)
+                rtsp = str(web.input().rtsp)
+                db = eval(MYSQL_CONNECT_CMD)
+                cursor = db.cursor()
+                cmd = "UPDATE devices SET rtsp = '%s' WHERE deviceid = %d;" % (rtsp, deviceid)
+                cursor.execute(cmd)
+                db.close()
+
             elif method == "startlive":
                 deviceid = int(web.input().deviceid)   
                 db = eval(MYSQL_CONNECT_CMD)
@@ -73,8 +82,13 @@ class index:
                 db = eval(MYSQL_CONNECT_CMD)
                 cursor = db.cursor()
                 cmd = "DELETE FROM devices WHERE deviceid = '%s';" % deviceid
+                logger.info(cmd)
                 cursor.execute(cmd)
                 db.close()    
+                if deviceid in livemap.keys():
+                    livemap.pop(deviceid)
+                if deviceid in recordmap.keys():
+                    recordmap.pop(deviceid)
 
             else:
                 return "未提供的方法"

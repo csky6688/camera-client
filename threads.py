@@ -15,14 +15,14 @@ class liveThread(threading.Thread):
         self.deviceid = deviceid 
         self.rtmp = rtmp
         self.cmd = [
-            'avconv', 
+            FFMPEG_BIN, 
             '-rtsp_transport', 'tcp',
             '-i', rtsp,
             '-c', 'copy',
             '-map', '0:0',
             '-f', 'flv',
             '-an',
-            'rtmp://localhost:' + str(RTMP_PORT) + '/live/camera-' + str(deviceid)
+            'rtmp://127.0.0.1:' + str(RTMP_PORT) + '/live/camera-' + str(deviceid)
         ]
 
     def run(self):
@@ -37,12 +37,15 @@ class liveThread(threading.Thread):
                 #以读取到ffmpeg进程持续输出为标志
                 time.sleep(1)
                 output = rubbish.readline()
-                if "RTSP/RTP stream from IPNC" in output:
+                if "Metadata" in output:
+                    self.requestStarted()
                     break
-            self.requestStarted()
+                if child.poll() != None:
+                    break
             child.wait()
             if livemap[self.deviceid] == "STOP":
                 break
+            time.sleep(5)
 
     def requestPending(self):
         msg = "deviceid=%d&url=%s" % (self.deviceid, self.rtmp)
@@ -62,13 +65,14 @@ class recordThread(threading.Thread):
         except:
             pass
         self.cmd = [
-            'avconv', 
+            FFMPEG_BIN, 
             '-rtsp_transport', 'tcp',
             '-i', rtsp,
             '-c', 'copy',
             '-map', '0:0',
             '-f', 'segment',
             '-segment_time', str(RECORD_INTERVAL),
+            '-segment_atclocktime', '1',
             videopath + '/' + str(deviceid) + '-%02d.mp4'
         ]
 
@@ -84,12 +88,16 @@ class recordThread(threading.Thread):
                 #以读取到ffmpeg进程持续输出为标志
                 time.sleep(1)
                 output = rubbish.readline()
-                if "RTSP/RTP stream from IPNC" in output:
+                if "Metadata" in output:
+                    self.requestStarted()
                     break
-            self.requestStarted()
+                if child.poll() != None:
+                    break
+            
             child.wait()
             if recordmap[self.deviceid] == "STOP":
                 break
+            time.sleep(5)
 
     def requestPending(self):
         msg = "deviceid=%d" % (self.deviceid)
@@ -123,44 +131,64 @@ class saveRecordFileThread(threading.Thread):
             self.getfiles(self.tmpdirs)
             for everyone in self.files:
                 deviceid = int(os.path.basename(everyone).split("-")[0])
-                child = subprocess.Popen(["avprobe", everyone], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+                child = subprocess.Popen([FFPROBE_BIN, everyone], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
                 for x in child.stderr.readlines():
                     if "Duration" in x:
-                        faststart = subprocess.Popen(["qt-faststart", everyone, everyone + ".new"], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
-                        faststart.wait()
-                        os.remove(everyone)
-                        everyone = everyone + ".new"
+                        end = float(os.stat(everyone).st_ctime)
                         duration = x.split(" ")[3].split(",")[0]
                         h = float(duration.split(":")[0])
                         m = float(duration.split(":")[1])
                         s = float(duration.split(":")[2])
-                        duration = h * 3600 + m * 60 + s 
-                        end = float(os.stat(everyone).st_ctime)
+                        duration = float(h * 3600 + m * 60 + s) 
+
                         start = end - duration
                         filename = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime(start)) + ".mp4"
                         start = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(start))
                         end = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(end))
-
                         newname = VIDEO_PATH + str(deviceid) + "/" + str(filename)
-                        
+
+                        #重新转换以获得正确的视频开始时间
+                        avconv = subprocess.Popen([
+                            FFMPEG_BIN, 
+                            "-i", everyone,
+                            "-c", "copy",
+                            "-movflags", "faststart",
+                            everyone + ".fix.mp4"], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+                        avconv.wait()
+                        os.remove(everyone)
+                        everyone = everyone + ".fix.mp4"
+
+                        #将metadata移至视频第一帧
+                        #faststart = subprocess.Popen(["qt-faststart", everyone, everyone + ".new"], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+                        #faststart.wait()
+                        #os.remove(everyone)
+                        #everyone = everyone + ".new"
+
                         try:
                             os.makedirs(VIDEO_PATH + str(deviceid))
                         except Exception, e:
                             pass
                         os.rename(everyone, newname)
-                        self.requestNewRecord(deviceid, duration, start, end, os.path.basename(filename))
+                        images = subprocess.Popen([
+                            FFMPEG_BIN, 
+                            "-i", newname,
+                            "-vframes", "1",
+                            "-f", "image2",
+                            newname + ".jpg"], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+                        images.wait()
+                        self.requestNewRecordReady(deviceid, duration, start, end, os.path.basename(filename))
 
         except Exception, e:
-            print str(e)
+            logger.info(str(e))
 
     def run(self):
         while self.running == True:
             self.runonce()
             time.sleep(3)
 
-    def requestNewRecord(self, deviceid, duration, start, end, filename):
+    def requestNewRecordReady(self, deviceid, duration, start, end, filename):
         path = FILE_ROOT + str(deviceid) + "/"
         url =  path + str(filename)
 
         msg = "deviceid=%d&duration=%f&start='%s'&end='%s'&url='%s'" % (int(deviceid), float(duration), str(start), str(end), url)
-        sendRequest(msg, SERVER_IP, SERVER_PORT, record_add_api, "POST")
+        return sendRequest(msg, SERVER_IP, SERVER_PORT, record_file_ready_api, "POST")
