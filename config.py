@@ -19,7 +19,7 @@ urls = (
     site_prefix + 'api',             'api.index',
 )
 
-FFMPEG_BIN = "/home/camera/ffmpeg/ffmpeg"
+FFMPEG_BIN = "/home/camera/ffmpeg-2.3.3/ffmpeg"
 FFPROBE_BIN = "/home/camera/ffmpeg/ffprobe"
 PROGRAM_ROOT = "/home/camera/camera-client/"
 CAMERA_LOG = PROGRAM_ROOT + "logs/"

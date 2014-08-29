@@ -43,6 +43,7 @@ class liveThread(threading.Thread):
                 if child.poll() != None:
                     break
             child.wait()
+            os.rename(logfile, logfile + str(child.pid))
             if livemap[self.deviceid] == "STOP":
                 break
             time.sleep(5)
@@ -95,6 +96,7 @@ class recordThread(threading.Thread):
                     break
             
             child.wait()
+            os.rename(logfile, logfile + str(child.pid))
             if recordmap[self.deviceid] == "STOP":
                 break
             time.sleep(5)
