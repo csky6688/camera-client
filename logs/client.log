@@ -198,3 +198,4 @@
 2014-08-28 21:35:38,951 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'
 2014-08-28 21:35:41,999 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'
 2014-08-28 21:35:45,024 INFO 'saveRecordFileThread' object has no attribute 'requestNewRecordPending'
+2014-08-29 16:50:33,051 INFO DELETE FROM devices WHERE deviceid = '115';
