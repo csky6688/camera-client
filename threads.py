@@ -43,7 +43,6 @@ class liveThread(threading.Thread):
                 if child.poll() != None:
                     break
             child.wait()
-            os.rename(logfile, logfile + str(child.pid))
             if livemap[self.deviceid] == "STOP":
                 break
             time.sleep(5)
@@ -66,14 +65,13 @@ class recordThread(threading.Thread):
         except:
             pass
         self.cmd = [
-            FFMPEG_BIN, 
+            'avconv', 
             '-rtsp_transport', 'tcp',
             '-i', rtsp,
             '-c', 'copy',
             '-map', '0:0',
             '-f', 'segment',
             '-segment_time', str(RECORD_INTERVAL),
-            '-segment_atclocktime', '1',
             videopath + '/' + str(deviceid) + '-%02d.mp4'
         ]
 
@@ -96,7 +94,7 @@ class recordThread(threading.Thread):
                     break
             
             child.wait()
-            os.rename(logfile, logfile + str(child.pid))
+            os.rename(logfile, logfile + "-" + str(child.pid))
             if recordmap[self.deviceid] == "STOP":
                 break
             time.sleep(5)
