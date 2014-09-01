@@ -19,7 +19,7 @@ urls = (
     site_prefix + 'api',             'api.index',
 )
 
-FFMPEG_BIN = "/home/camera/ffmpeg-2.3.3/ffmpeg"
+FFMPEG_BIN = "/home/camera/ffmpeg/ffmpeg"
 FFPROBE_BIN = "/home/camera/ffmpeg/ffprobe"
 PROGRAM_ROOT = "/home/camera/camera-client/"
 CAMERA_LOG = PROGRAM_ROOT + "logs/"
@@ -30,7 +30,7 @@ VIDEO_PATH = "/home/camera/www/videos/"
 
 MYSQL_CONNECT_CMD = "MySQLdb.connect(host = DB_HOST, user = DB_USER, passwd = DB_PASSWORD, db = DB_NAME, charset = DB_CHARSET)"
 
-RECORD_INTERVAL = 3600     
+RECORD_INTERVAL = 1800     
 SERVER_IP = "127.0.0.1"
 LOCAL_IP = "121.49.97.4"
 SERVER_PORT = 8087

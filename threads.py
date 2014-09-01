@@ -35,7 +35,7 @@ class liveThread(threading.Thread):
             rubbish = open(logfile, "r")
             while True:
                 #以读取到ffmpeg进程持续输出为标志
-                time.sleep(1)
+                #time.sleep(1)
                 output = rubbish.readline()
                 if "Metadata" in output:
                     self.requestStarted()
@@ -43,6 +43,7 @@ class liveThread(threading.Thread):
                 if child.poll() != None:
                     break
             child.wait()
+            os.rename(logfile, logfile + '-' + str(child.pid))
             if livemap[self.deviceid] == "STOP":
                 break
             time.sleep(5)
@@ -65,13 +66,15 @@ class recordThread(threading.Thread):
         except:
             pass
         self.cmd = [
-            'avconv', 
+            FFMPEG_BIN, 
             '-rtsp_transport', 'tcp',
             '-i', rtsp,
             '-c', 'copy',
             '-map', '0:0',
             '-f', 'segment',
             '-segment_time', str(RECORD_INTERVAL),
+            '-segment_atclocktime', '1',
+            '-an',
             videopath + '/' + str(deviceid) + '-%02d.mp4'
         ]
 
@@ -85,16 +88,15 @@ class recordThread(threading.Thread):
             rubbish = open(logfile, "r")
             while True:
                 #以读取到ffmpeg进程持续输出为标志
-                time.sleep(1)
+                #time.sleep(1)
                 output = rubbish.readline()
                 if "Metadata" in output:
                     self.requestStarted()
                     break
                 if child.poll() != None:
                     break
-            
             child.wait()
-            os.rename(logfile, logfile + "-" + str(child.pid))
+            os.rename(logfile, logfile + '-' + str(child.pid))
             if recordmap[self.deviceid] == "STOP":
                 break
             time.sleep(5)

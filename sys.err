@@ -714,3 +714,50 @@ SyntaxError: invalid syntax
 127.0.0.1:60219 - - [30/Aug/2014 10:29:31] "HTTP/1.1 POST api" - 200 OK
 127.0.0.1:60250 - - [30/Aug/2014 10:30:48] "HTTP/1.1 POST api" - 200 OK
 127.0.0.1:60253 - - [30/Aug/2014 10:30:49] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:41432 - - [30/Aug/2014 14:54:14] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:41435 - - [30/Aug/2014 14:54:15] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:41446 - - [30/Aug/2014 15:06:36] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:41449 - - [30/Aug/2014 15:06:38] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:41511 - - [30/Aug/2014 22:52:10] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:41514 - - [30/Aug/2014 22:52:11] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:41525 - - [30/Aug/2014 22:53:50] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:41528 - - [30/Aug/2014 22:53:52] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:41599 - - [31/Aug/2014 12:23:03] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:41601 - - [31/Aug/2014 12:23:05] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:41632 - - [31/Aug/2014 12:25:03] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:41635 - - [31/Aug/2014 12:25:05] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:41644 - - [31/Aug/2014 12:26:41] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:41647 - - [31/Aug/2014 12:26:43] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:45398 - - [31/Aug/2014 14:32:30] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:45401 - - [31/Aug/2014 14:32:32] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49122 - - [31/Aug/2014 14:54:27] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49125 - - [31/Aug/2014 14:54:29] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49153 - - [31/Aug/2014 16:11:30] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49156 - - [31/Aug/2014 16:11:32] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49167 - - [31/Aug/2014 16:15:08] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49172 - - [31/Aug/2014 16:16:00] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49214 - - [31/Aug/2014 20:40:55] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49224 - - [31/Aug/2014 20:44:20] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49227 - - [31/Aug/2014 20:44:21] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49259 - - [31/Aug/2014 20:47:03] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49261 - - [31/Aug/2014 20:47:05] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49264 - - [31/Aug/2014 20:47:07] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49365 - - [01/Sep/2014 11:00:09] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49368 - - [01/Sep/2014 11:00:10] "HTTP/1.1 POST api" - 200 OK
+Traceback (most recent call last):
+  File "/home/camera/camera-client/main.py", line 87, in <module>
+    app.run()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/local/lib/python2.7/dist-packages/web.py-0.37-py2.7.egg/web/wsgiserver/__init__.py", line 1753, in start
+    raise socket.error(msg)
+socket.error: No socket could be created
+127.0.0.1:49378 - - [01/Sep/2014 11:01:34] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49380 - - [01/Sep/2014 11:01:36] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49383 - - [01/Sep/2014 11:01:38] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49394 - - [01/Sep/2014 11:02:14] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:49397 - - [01/Sep/2014 11:02:16] "HTTP/1.1 POST api" - 200 OK
