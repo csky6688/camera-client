@@ -761,3 +761,216 @@ socket.error: No socket could be created
 127.0.0.1:49383 - - [01/Sep/2014 11:01:38] "HTTP/1.1 POST api" - 200 OK
 127.0.0.1:49394 - - [01/Sep/2014 11:02:14] "HTTP/1.1 POST api" - 200 OK
 127.0.0.1:49397 - - [01/Sep/2014 11:02:16] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:56845 - - [01/Sep/2014 11:50:37] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:56846 - - [01/Sep/2014 11:50:54] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:56847 - - [01/Sep/2014 11:51:25] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:56848 - - [01/Sep/2014 11:51:34] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:56851 - - [01/Sep/2014 11:52:52] "HTTP/1.1 POST api" - 200 OK
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/threading.py", line 808, in __bootstrap_inner
+    self.run()
+  File "/home/ch/camera-client/threads.py", line 46, in run
+    os.rename(logfile, logfile + '-' + str(child.pid))
+OSError: [Errno 2] No such file or directory
+
+113.240.243.178:56854 - - [01/Sep/2014 11:55:01] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:56855 - - [01/Sep/2014 11:55:45] "HTTP/1.1 POST api" - 200 OK
+Exception in thread Thread-13:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/threading.py", line 808, in __bootstrap_inner
+    self.run()
+  File "/home/ch/camera-client/threads.py", line 99, in run
+    os.rename(logfile, logfile + '-' + str(child.pid))
+OSError: [Errno 2] No such file or directory
+
+113.240.243.178:56856 - - [01/Sep/2014 11:58:55] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:56861 - - [01/Sep/2014 12:00:48] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:57096 - - [01/Sep/2014 14:05:00] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:57129 - - [01/Sep/2014 14:10:43] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:57130 - - [01/Sep/2014 14:11:11] "HTTP/1.1 POST api" - 200 OK
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/threading.py", line 808, in __bootstrap_inner
+    self.run()
+  File "/home/ch/camera-client/threads.py", line 47, in run
+    if livemap[self.deviceid] == "STOP":
+KeyError: 119
+
+Exception in thread Thread-14:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/threading.py", line 808, in __bootstrap_inner
+    self.run()
+  File "/home/ch/camera-client/threads.py", line 100, in run
+    if recordmap[self.deviceid] == "STOP":
+KeyError: 119
+
+113.240.243.178:57149 - - [01/Sep/2014 14:14:05] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:57150 - - [01/Sep/2014 14:14:13] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:57151 - - [01/Sep/2014 14:14:15] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:59174 - - [02/Sep/2014 11:11:57] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:59175 - - [02/Sep/2014 11:11:59] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61501 - - [03/Sep/2014 14:07:55] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61502 - - [03/Sep/2014 14:07:58] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61506 - - [03/Sep/2014 14:10:50] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61597 - - [03/Sep/2014 15:13:34] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61598 - - [03/Sep/2014 15:13:36] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61601 - - [03/Sep/2014 15:18:54] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61602 - - [03/Sep/2014 15:18:56] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61690 - - [03/Sep/2014 15:50:51] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61691 - - [03/Sep/2014 15:50:52] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61692 - - [03/Sep/2014 15:51:02] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61693 - - [03/Sep/2014 15:51:04] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61695 - - [03/Sep/2014 15:52:42] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61696 - - [03/Sep/2014 15:52:53] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61697 - - [03/Sep/2014 15:52:55] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61698 - - [03/Sep/2014 15:52:57] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61735 - - [03/Sep/2014 16:08:02] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61736 - - [03/Sep/2014 16:08:04] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61769 - - [03/Sep/2014 16:11:50] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61770 - - [03/Sep/2014 16:11:51] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61824 - - [03/Sep/2014 17:02:55] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61825 - - [03/Sep/2014 17:02:57] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61826 - - [03/Sep/2014 17:03:08] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61865 - - [03/Sep/2014 17:29:41] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61866 - - [03/Sep/2014 17:30:01] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61867 - - [03/Sep/2014 17:30:14] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61874 - - [03/Sep/2014 17:39:54] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61875 - - [03/Sep/2014 17:39:56] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61878 - - [03/Sep/2014 17:45:02] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61883 - - [03/Sep/2014 17:46:30] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61884 - - [03/Sep/2014 17:47:17] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61885 - - [03/Sep/2014 17:47:27] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61892 - - [03/Sep/2014 17:47:54] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61895 - - [03/Sep/2014 17:48:56] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61896 - - [03/Sep/2014 17:48:59] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:61897 - - [03/Sep/2014 17:49:01] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62058 - - [03/Sep/2014 19:14:04] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62059 - - [03/Sep/2014 19:14:06] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62060 - - [03/Sep/2014 19:14:09] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62061 - - [03/Sep/2014 19:14:10] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62064 - - [03/Sep/2014 19:20:53] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62071 - - [03/Sep/2014 19:21:53] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62109 - - [03/Sep/2014 19:32:31] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62110 - - [03/Sep/2014 19:32:34] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62111 - - [03/Sep/2014 19:32:35] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62112 - - [03/Sep/2014 19:32:37] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62113 - - [03/Sep/2014 19:32:47] "HTTP/1.1 POST api" - 200 OK
+Exception in thread Thread-25:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/threading.py", line 808, in __bootstrap_inner
+    self.run()
+  File "/home/ch/camera-client/threads.py", line 46, in run
+    os.rename(logfile, logfile + '-' + str(child.pid))
+OSError: [Errno 2] No such file or directory
+
+113.240.243.178:62114 - - [03/Sep/2014 19:34:11] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62115 - - [03/Sep/2014 19:34:17] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62116 - - [03/Sep/2014 19:35:00] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62117 - - [03/Sep/2014 19:35:19] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62118 - - [03/Sep/2014 19:35:21] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62181 - - [03/Sep/2014 20:07:39] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62182 - - [03/Sep/2014 20:08:02] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62203 - - [03/Sep/2014 20:20:29] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62204 - - [03/Sep/2014 20:20:31] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62298 - - [03/Sep/2014 21:29:20] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62297 - - [03/Sep/2014 21:29:22] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62379 - - [03/Sep/2014 22:31:11] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:62380 - - [03/Sep/2014 22:31:16] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63471 - - [04/Sep/2014 11:29:12] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63472 - - [04/Sep/2014 11:29:14] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63478 - - [04/Sep/2014 11:32:13] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63479 - - [04/Sep/2014 11:32:15] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63480 - - [04/Sep/2014 11:32:17] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63481 - - [04/Sep/2014 11:32:19] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63482 - - [04/Sep/2014 11:34:21] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63483 - - [04/Sep/2014 11:34:23] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63484 - - [04/Sep/2014 11:34:24] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63487 - - [04/Sep/2014 11:34:36] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63488 - - [04/Sep/2014 11:34:38] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63489 - - [04/Sep/2014 11:34:41] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63804 - - [04/Sep/2014 15:28:14] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63805 - - [04/Sep/2014 15:28:17] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63806 - - [04/Sep/2014 15:28:19] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63813 - - [04/Sep/2014 15:32:09] "HTTP/1.1 POST api" - 200 OK
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/threading.py", line 808, in __bootstrap_inner
+    self.run()
+  File "/home/ch/camera-client/threads.py", line 76, in run
+    '-i', rtsp,
+NameError: global name 'rtsp' is not defined
+
+113.240.243.178:63817 - - [04/Sep/2014 15:33:44] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63818 - - [04/Sep/2014 15:34:27] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63831 - - [04/Sep/2014 15:41:38] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63868 - - [04/Sep/2014 15:48:53] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63869 - - [04/Sep/2014 15:49:38] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63870 - - [04/Sep/2014 15:49:40] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63871 - - [04/Sep/2014 15:50:18] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63872 - - [04/Sep/2014 15:50:20] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63875 - - [04/Sep/2014 15:50:57] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63876 - - [04/Sep/2014 15:51:00] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63880 - - [04/Sep/2014 15:55:40] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63881 - - [04/Sep/2014 15:55:42] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63882 - - [04/Sep/2014 15:56:21] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63883 - - [04/Sep/2014 15:56:23] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63884 - - [04/Sep/2014 15:56:25] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63885 - - [04/Sep/2014 15:56:28] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63891 - - [04/Sep/2014 15:57:23] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63892 - - [04/Sep/2014 15:57:25] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63893 - - [04/Sep/2014 15:57:27] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63894 - - [04/Sep/2014 15:58:18] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63928 - - [04/Sep/2014 15:59:10] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63929 - - [04/Sep/2014 15:59:13] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63930 - - [04/Sep/2014 16:00:11] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63931 - - [04/Sep/2014 16:00:12] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63932 - - [04/Sep/2014 16:00:14] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63933 - - [04/Sep/2014 16:00:16] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63934 - - [04/Sep/2014 16:00:18] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63935 - - [04/Sep/2014 16:00:20] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63939 - - [04/Sep/2014 16:00:40] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63942 - - [04/Sep/2014 16:00:54] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63943 - - [04/Sep/2014 16:00:56] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63944 - - [04/Sep/2014 16:00:59] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63945 - - [04/Sep/2014 16:01:01] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63946 - - [04/Sep/2014 16:01:04] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63947 - - [04/Sep/2014 16:01:06] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63948 - - [04/Sep/2014 16:01:08] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63952 - - [04/Sep/2014 16:05:59] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63953 - - [04/Sep/2014 16:06:01] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63954 - - [04/Sep/2014 16:06:03] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63955 - - [04/Sep/2014 16:06:33] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63956 - - [04/Sep/2014 16:06:35] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:63957 - - [04/Sep/2014 16:06:37] "HTTP/1.1 POST api" - 200 OK
+113.54.145.13:36832 - - [04/Sep/2014 23:24:52] "HTTP/1.1 GET /" - 404 Not Found
+113.54.145.13:36834 - - [04/Sep/2014 23:24:52] "HTTP/1.1 OPTIONS /" - 404 Not Found
+113.54.145.13:36836 - - [04/Sep/2014 23:24:52] "HTTP/1.1 OPTIONS /" - 404 Not Found
+113.54.145.13:36961 - - [04/Sep/2014 23:25:35] "HTTP/1.1 GET /nice ports,/Trinity.txt.bak" - 404 Not Found
+113.240.243.178:65149 - - [04/Sep/2014 23:27:04] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:65150 - - [04/Sep/2014 23:27:07] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:65151 - - [04/Sep/2014 23:27:09] "HTTP/1.1 POST api" - 200 OK
+Traceback (most recent call last):
+  File "/home/ch/camera-client/main.py", line 87, in <module>
+    app.run()
+  File "/usr/lib64/python2.7/site-packages/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/lib64/python2.7/site-packages/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/lib64/python2.7/site-packages/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/lib64/python2.7/site-packages/web/wsgiserver/__init__.py", line 1753, in start
+    raise socket.error(msg)
+socket.error: No socket could be created
+113.240.243.178:65161 - - [04/Sep/2014 23:34:08] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:65162 - - [04/Sep/2014 23:34:10] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:65163 - - [04/Sep/2014 23:34:11] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:65166 - - [04/Sep/2014 23:35:57] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:65173 - - [04/Sep/2014 23:35:59] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:65175 - - [04/Sep/2014 23:36:02] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:65252 - - [05/Sep/2014 00:18:07] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:65253 - - [05/Sep/2014 00:18:09] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:65254 - - [05/Sep/2014 00:18:11] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:65255 - - [05/Sep/2014 00:18:13] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:65256 - - [05/Sep/2014 00:18:15] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:65257 - - [05/Sep/2014 00:18:17] "HTTP/1.1 POST api" - 200 OK

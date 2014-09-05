@@ -43,7 +43,7 @@ class liveThread(threading.Thread):
                 if child.poll() != None:
                     break
             child.wait()
-            os.rename(logfile, logfile + '-' + str(child.pid))
+            #os.rename(logfile, logfile + '-' + str(child.pid))
             if livemap[self.deviceid] == "STOP":
                 break
             time.sleep(5)
@@ -60,26 +60,38 @@ class recordThread(threading.Thread):
     def __init__(self, deviceid, rtsp):
         threading.Thread.__init__(self)
         self.deviceid = deviceid 
-        videopath = VIDEO_PATH + "tmp/" + str(deviceid)
+        self.rtsp = rtsp
+        self.videopath = VIDEO_PATH + "tmp/" + str(deviceid)
         try:
-            os.makedirs(videopath)
+            os.makedirs(self.videopath)
         except:
             pass
-        self.cmd = [
-            FFMPEG_BIN, 
-            '-rtsp_transport', 'tcp',
-            '-i', rtsp,
-            '-c', 'copy',
-            '-map', '0:0',
-            '-f', 'segment',
-            '-segment_time', str(RECORD_INTERVAL),
-            '-segment_atclocktime', '1',
-            '-an',
-            videopath + '/' + str(deviceid) + '-%02d.mp4'
-        ]
 
     def run(self):
+        count = 0
         while True:
+            count += 1
+            now = int(time.time())
+            #获取当前距离最近一个时间点的秒数
+            duration = 0
+            while (now % RECORD_INTERVAL) != 0:
+                duration += 1
+                now += 1
+            duration += 10
+
+            self.cmd = [
+                FFMPEG_BIN, 
+                '-rtsp_transport', 'tcp',
+                '-i', self.rtsp,
+                '-c', 'copy',
+                '-map', '0:0',
+                '-t', str(duration),
+                #'-f', 'segment',
+                #'-segment_time', str(RECORD_INTERVAL),
+                #'-segment_atclocktime', '1',
+                '-an',
+                self.videopath + '/' + str(self.deviceid) + '-' + str(count) + '.mp4'
+            ]
             self.requestPending()
             logfile = CAMERA_LOG + str(self.deviceid) + "-record.log"
             log = open(logfile, "w")
@@ -96,10 +108,10 @@ class recordThread(threading.Thread):
                 if child.poll() != None:
                     break
             child.wait()
-            os.rename(logfile, logfile + '-' + str(child.pid))
+            #os.rename(logfile, logfile + '-' + str(child.pid))
             if recordmap[self.deviceid] == "STOP":
                 break
-            time.sleep(5)
+            #time.sleep(5)
 
     def requestPending(self):
         msg = "deviceid=%d" % (self.deviceid)
@@ -159,12 +171,6 @@ class saveRecordFileThread(threading.Thread):
                         avconv.wait()
                         os.remove(everyone)
                         everyone = everyone + ".fix.mp4"
-
-                        #将metadata移至视频第一帧
-                        #faststart = subprocess.Popen(["qt-faststart", everyone, everyone + ".new"], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
-                        #faststart.wait()
-                        #os.remove(everyone)
-                        #everyone = everyone + ".new"
 
                         try:
                             os.makedirs(VIDEO_PATH + str(deviceid))
