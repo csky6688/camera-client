@@ -3,3 +3,8 @@
 2014-09-04 16:00:26,626 INFO [Errno 2] No such file or directory: '/home/ch/www/videos/tmp/'
 2014-09-04 23:32:56,094 INFO [Errno 2] No such file or directory: '/home/ch/www/videos/tmp/'
 2014-09-05 00:17:23,121 INFO [Errno 2] No such file or directory: '/home/ch/www/videos/tmp/'
+2014-09-09 11:31:28,579 INFO DELETE FROM devices WHERE deviceid = '120';
+2014-09-09 11:31:30,841 INFO DELETE FROM devices WHERE deviceid = '143';
+2014-09-09 20:59:06,638 INFO DELETE FROM devices WHERE deviceid = '154';
+2014-09-09 21:07:10,513 INFO DELETE FROM devices WHERE deviceid = '155';
+2014-09-09 21:11:28,595 INFO DELETE FROM devices WHERE deviceid = '156';

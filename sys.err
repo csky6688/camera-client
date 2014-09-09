@@ -974,3 +974,69 @@ socket.error: No socket could be created
 113.240.243.178:65255 - - [05/Sep/2014 00:18:13] "HTTP/1.1 POST api" - 200 OK
 113.240.243.178:65256 - - [05/Sep/2014 00:18:15] "HTTP/1.1 POST api" - 200 OK
 113.240.243.178:65257 - - [05/Sep/2014 00:18:17] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:4185 - - [06/Sep/2014 11:51:41] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:4186 - - [06/Sep/2014 11:51:43] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:4187 - - [06/Sep/2014 11:51:45] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:4188 - - [06/Sep/2014 11:51:47] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:4189 - - [06/Sep/2014 11:51:49] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:4190 - - [06/Sep/2014 11:51:51] "HTTP/1.1 POST api" - 200 OK
+222.197.182.130:42129 - - [06/Sep/2014 15:21:44] "HTTP/1.1 GET /" - 404 Not Found
+222.197.182.130:42133 - - [06/Sep/2014 15:21:44] "HTTP/1.1 OPTIONS /" - 404 Not Found
+222.197.182.130:42134 - - [06/Sep/2014 15:21:44] "HTTP/1.1 OPTIONS /" - 404 Not Found
+222.197.182.130:42161 - - [06/Sep/2014 15:22:27] "HTTP/1.1 GET /nice ports,/Trinity.txt.bak" - 404 Not Found
+113.240.243.178:5060 - - [06/Sep/2014 21:32:58] "HTTP/1.1 POST api" - 200 OK
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/threading.py", line 808, in __bootstrap_inner
+    self.run()
+  File "/home/ch/camera-client/threads.py", line 41, in run
+    self.requestStarted()
+  File "/home/ch/camera-client/threads.py", line 57, in requestStarted
+    sendRequest(msg, SERVER_IP, SERVER_PORT, live_started_api, "POST")
+  File "/home/ch/camera-client/functions.py", line 14, in sendRequest
+    httpClient.request(method, url, msg, headers)
+  File "/usr/lib64/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib64/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib64/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib64/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib64/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib64/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib64/python2.7/socket.py", line 571, in create_connection
+    raise err
+error: [Errno 110] Connection timed out
+
+113.240.243.178:5062 - - [06/Sep/2014 21:34:54] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:5063 - - [06/Sep/2014 21:35:28] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:5064 - - [06/Sep/2014 21:35:30] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:5065 - - [06/Sep/2014 21:35:55] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:5066 - - [06/Sep/2014 21:35:57] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:5067 - - [06/Sep/2014 21:35:59] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:5339 - - [07/Sep/2014 00:15:49] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:5340 - - [07/Sep/2014 00:16:16] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:5341 - - [07/Sep/2014 00:16:19] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:5342 - - [07/Sep/2014 00:16:21] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:5343 - - [07/Sep/2014 00:16:23] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:5344 - - [07/Sep/2014 00:16:25] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:6461 - - [07/Sep/2014 14:05:55] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:6462 - - [07/Sep/2014 14:05:55] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:6463 - - [07/Sep/2014 14:05:59] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:6464 - - [07/Sep/2014 14:05:59] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:10554 - - [09/Sep/2014 11:31:28] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:10555 - - [09/Sep/2014 11:31:30] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:11090 - - [09/Sep/2014 18:02:31] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:11091 - - [09/Sep/2014 18:02:33] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:11092 - - [09/Sep/2014 18:02:50] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:11093 - - [09/Sep/2014 18:02:53] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:11379 - - [09/Sep/2014 20:05:29] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:11488 - - [09/Sep/2014 20:59:06] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:11489 - - [09/Sep/2014 20:59:59] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:11499 - - [09/Sep/2014 21:07:10] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:11500 - - [09/Sep/2014 21:07:49] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:11503 - - [09/Sep/2014 21:11:28] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:11513 - - [09/Sep/2014 21:13:02] "HTTP/1.1 POST api" - 200 OK
