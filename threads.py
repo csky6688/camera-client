@@ -9,6 +9,62 @@ from logger import *
 from config import *
 from functions import *
 
+class phoneLiveThread(threading.Thread):
+    def __init__(self, deviceid):
+        threading.Thread.__init__(self)
+        self.deviceid = deviceid 
+        self.cmd = [
+            FFMPEG_BIN, 
+            '-re',
+            '-loop', "1",
+            '-i', TEMP_DIR + "%d.jpg" % self.deviceid,
+            '-r', "10",
+            '-f', 'flv',
+            'rtmp://127.0.0.1:' + str(RTMP_PORT) + '/live/phone-' + str(self.deviceid)
+        ]
+
+    def run(self):
+        while True:
+            logfile = CAMERA_LOG + str(self.deviceid) + "-live.log"
+            log = open(logfile, "w")
+            child = subprocess.Popen(self.cmd, stdout = log, stderr = log)
+            phonelivemap[self.deviceid] = child
+            child.wait()
+            if phonelivemap[self.deviceid] == "STOP":
+                break
+            time.sleep(5)
+
+class phoneRecordThread(threading.Thread):
+    def __init__(self, deviceid):
+        threading.Thread.__init__(self)
+        self.deviceid = deviceid 
+        self.videopath = VIDEO_PATH + "phone/" + str(deviceid)
+        try:
+            os.makedirs(self.videopath)
+        except:
+            pass
+
+        self.cmd = [
+            FFMPEG_BIN, 
+            '-re',
+            '-loop', "1",
+            '-i', TEMP_DIR + "%d.jpg" % deviceid,
+            '-r', "10",
+            '-f', 'flv',
+            self.videopath + '/' + str(deviceid) + '.mp4'
+        ]
+
+    def run(self):
+        while True:
+            logfile = CAMERA_LOG + str(self.deviceid) + "-record.log"
+            log = open(logfile, "w")
+            child = subprocess.Popen(self.cmd, stdout = log, stderr = log)
+            phonerecordmap[self.deviceid] = child
+            child.wait()
+            if phonerecordmap[self.deviceid] == "STOP":
+                break
+            time.sleep(5)
+
 class liveThread(threading.Thread):
     def __init__(self, deviceid, rtmp, rtsp):
         threading.Thread.__init__(self)
@@ -168,6 +224,7 @@ class saveRecordFileThread(threading.Thread):
                             "-c", "copy",
                             "-movflags", "faststart",
                             everyone + ".fix.mp4"], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+                      
                         avconv.wait()
                         os.remove(everyone)
                         everyone = everyone + ".fix.mp4"

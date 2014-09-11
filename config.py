@@ -17,11 +17,16 @@ web.config.debug = False
 
 urls = (
     site_prefix + 'api',             'api.index',
+    site_prefix + '/api',             'api.index',
 )
 
 FFMPEG_BIN = "/home/ch/ffmpeg/ffmpeg"
 FFPROBE_BIN = "/home/ch/ffmpeg/ffprobe"
 PROGRAM_ROOT = "/home/ch/camera-client/"
+
+PHONE_RECEIVER = PROGRAM_ROOT + "phonereceiver.py"
+TEMP_DIR = PROGRAM_ROOT + "tmp/"
+JPG_DIR = PROGRAM_ROOT + "tmp/jpgs/"
 CAMERA_LOG = PROGRAM_ROOT + "logs/"
 logfile = PROGRAM_ROOT + "logs/client.log"
 LOG_LEVEL = logging.DEBUG
@@ -50,5 +55,8 @@ record_file_ready_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?me
 
 livemap = {}
 recordmap = {}
+socketmap = {}
+phonelivemap = {}
+phonerecordmap = {}
 
 globalthreads = []

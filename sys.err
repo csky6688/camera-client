@@ -1040,3 +1040,263 @@ error: [Errno 110] Connection timed out
 113.240.243.178:11500 - - [09/Sep/2014 21:07:49] "HTTP/1.1 POST api" - 200 OK
 113.240.243.178:11503 - - [09/Sep/2014 21:11:28] "HTTP/1.1 POST api" - 200 OK
 113.240.243.178:11513 - - [09/Sep/2014 21:13:02] "HTTP/1.1 POST api" - 200 OK
+218.77.79.48:41886 - - [10/Sep/2014 19:00:55] "HTTP/1.1 GET " - 404 Not Found
+218.77.79.48:63134 - - [10/Sep/2014 19:00:57] "HTTP/1.1 GET " - 404 Not Found
+218.77.79.42:32095 - - [10/Sep/2014 19:01:03] "HTTP/1.1 GET " - 404 Not Found
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/threading.py", line 808, in __bootstrap_inner
+    self.run()
+  File "/home/ch/camera-client/threads.py", line 30, in run
+    self.requestPending()
+  File "/home/ch/camera-client/threads.py", line 53, in requestPending
+    sendRequest(msg, SERVER_IP, SERVER_PORT, live_pending_api, "POST")
+  File "/home/ch/camera-client/functions.py", line 14, in sendRequest
+    httpClient.request(method, url, msg, headers)
+  File "/usr/lib64/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib64/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib64/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib64/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib64/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib64/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib64/python2.7/socket.py", line 571, in create_connection
+    raise err
+error: [Errno 110] Connection timed out
+
+Exception in thread Thread-13:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/threading.py", line 808, in __bootstrap_inner
+    self.run()
+  File "/home/ch/camera-client/threads.py", line 95, in run
+    self.requestPending()
+  File "/home/ch/camera-client/threads.py", line 118, in requestPending
+    sendRequest(msg, SERVER_IP, SERVER_PORT, record_pending_api, "POST")
+  File "/home/ch/camera-client/functions.py", line 14, in sendRequest
+    httpClient.request(method, url, msg, headers)
+  File "/usr/lib64/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib64/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib64/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib64/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib64/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib64/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib64/python2.7/socket.py", line 571, in create_connection
+    raise err
+error: [Errno 110] Connection timed out
+
+113.240.243.178:14052 - - [10/Sep/2014 23:48:29] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:14053 - - [10/Sep/2014 23:48:31] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:14054 - - [10/Sep/2014 23:49:11] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:14055 - - [10/Sep/2014 23:49:13] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:16100 - - [11/Sep/2014 20:25:21] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:16105 - - [11/Sep/2014 20:26:16] "HTTP/1.1 POST api" - 200 OK
+113.240.243.178:16119 - - [11/Sep/2014 20:27:18] "HTTP/1.1 POST api" - 200 OK
+121.49.97.10:59318 - - [11/Sep/2014 20:57:34] "HTTP/1.1 POST /api" - 404 Not Found
+121.49.97.10:36217 - - [11/Sep/2014 21:01:05] "HTTP/1.1 POST /api" - 404 Not Found
+121.49.97.10:37423 - - [11/Sep/2014 21:02:02] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:41502 - - [11/Sep/2014 21:02:37] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:54083 - - [11/Sep/2014 21:07:31] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:48512 - - [11/Sep/2014 21:09:05] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:48682 - - [11/Sep/2014 21:12:40] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:48682 - - [11/Sep/2014 21:12:43] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:48682 - - [11/Sep/2014 21:12:45] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:48682 - - [11/Sep/2014 21:12:50] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:41417 - - [11/Sep/2014 21:27:10] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:41417 - - [11/Sep/2014 21:27:20] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:54879 - - [11/Sep/2014 21:27:45] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:48464 - - [11/Sep/2014 21:28:00] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:44770 - - [11/Sep/2014 21:30:05] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:46503 - - [11/Sep/2014 21:31:34] "HTTP/1.1 POST /api" - 200 OK
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib64/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib64/python2.7/site-packages/web/application.py", line 416, in _delegate
+    mod = __import__(mod, None, None, [''])
+  File "/home/ch/camera-client/api.py", line 99
+    '-deviceid', deviceid
+              ^
+SyntaxError: invalid syntax
+
+121.49.97.10:40782 - - [11/Sep/2014 21:35:29] "HTTP/1.1 POST /api" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/home/ch/camera-client/main.py", line 87, in <module>
+    app.run()
+  File "/usr/lib64/python2.7/site-packages/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/lib64/python2.7/site-packages/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/lib64/python2.7/site-packages/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/lib64/python2.7/site-packages/web/wsgiserver/__init__.py", line 1753, in start
+    raise socket.error(msg)
+socket.error: No socket could be created
+121.49.97.10:33478 - - [11/Sep/2014 21:35:48] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:48891 - - [11/Sep/2014 21:36:14] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:43833 - - [11/Sep/2014 21:36:56] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:51835 - - [11/Sep/2014 21:37:37] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:39299 - - [11/Sep/2014 21:38:19] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:50735 - - [11/Sep/2014 21:40:03] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:50735 - - [11/Sep/2014 21:40:11] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:50735 - - [11/Sep/2014 21:40:17] "HTTP/1.1 POST /api" - 200 OK
+Traceback (most recent call last):
+  File "/home/ch/camera-client/main.py", line 95, in <module>
+    app.run()
+  File "/usr/lib64/python2.7/site-packages/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/lib64/python2.7/site-packages/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/lib64/python2.7/site-packages/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/lib64/python2.7/site-packages/web/wsgiserver/__init__.py", line 1765, in start
+    self.tick()
+  File "/usr/lib64/python2.7/site-packages/web/wsgiserver/__init__.py", line 1800, in tick
+    s, addr = self.socket.accept()
+  File "/usr/lib64/python2.7/socket.py", line 202, in accept
+    sock, addr = self._sock.accept()
+  File "/home/ch/camera-client/main.py", line 38, in exit_handler
+    child = recordmap[everyone]
+KeyError: 157
+121.49.97.10:36120 - - [11/Sep/2014 21:42:12] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:36120 - - [11/Sep/2014 21:42:18] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:36120 - - [11/Sep/2014 21:42:21] "HTTP/1.1 POST /api" - 200 OK
+Traceback (most recent call last):
+  File "/home/ch/camera-client/main.py", line 95, in <module>
+    app.run()
+  File "/usr/lib64/python2.7/site-packages/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/lib64/python2.7/site-packages/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/lib64/python2.7/site-packages/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/lib64/python2.7/site-packages/web/wsgiserver/__init__.py", line 1765, in start
+    self.tick()
+  File "/usr/lib64/python2.7/site-packages/web/wsgiserver/__init__.py", line 1800, in tick
+    s, addr = self.socket.accept()
+  File "/usr/lib64/python2.7/socket.py", line 202, in accept
+    sock, addr = self._sock.accept()
+  File "/home/ch/camera-client/main.py", line 38, in exit_handler
+    child = recordmap[everyone]
+KeyError: 157
+121.49.97.10:40405 - - [11/Sep/2014 21:45:15] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:48428 - - [11/Sep/2014 21:45:48] "HTTP/1.1 POST /api" - 200 OK
+Traceback (most recent call last):
+  File "/home/ch/camera-client/main.py", line 95, in <module>
+    app.run()
+  File "/usr/lib64/python2.7/site-packages/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/lib64/python2.7/site-packages/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/lib64/python2.7/site-packages/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/lib64/python2.7/site-packages/web/wsgiserver/__init__.py", line 1765, in start
+    self.tick()
+  File "/usr/lib64/python2.7/site-packages/web/wsgiserver/__init__.py", line 1800, in tick
+    s, addr = self.socket.accept()
+  File "/usr/lib64/python2.7/socket.py", line 202, in accept
+    sock, addr = self._sock.accept()
+  File "/home/ch/camera-client/main.py", line 38, in exit_handler
+    child = recordmap[everyone]
+KeyError: 157
+121.49.97.10:45265 - - [11/Sep/2014 21:47:01] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:47252 - - [11/Sep/2014 21:49:22] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:43557 - - [11/Sep/2014 21:50:20] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:55100 - - [11/Sep/2014 21:55:45] "HTTP/1.1 POST /api" - 200 OK
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/threading.py", line 808, in __bootstrap_inner
+    self.run()
+  File "/home/ch/camera-client/threads.py", line 28, in run
+    child = subprocess.Popen(self.cmd, stdout = log, stderr = log)
+NameError: global name 'log' is not defined
+
+121.49.97.10:35031 - - [11/Sep/2014 21:56:52] "HTTP/1.1 POST /api" - 200 OK
+Exception in thread Thread-13:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/threading.py", line 808, in __bootstrap_inner
+    self.run()
+  File "/home/ch/camera-client/threads.py", line 58, in run
+    child = subprocess.Popen(self.cmd, stdout = log, stderr = log)
+NameError: global name 'log' is not defined
+
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/threading.py", line 808, in __bootstrap_inner
+    self.run()
+  File "/home/ch/camera-client/threads.py", line 28, in run
+    child = subprocess.Popen(self.cmd, stdout = log, stderr = log)
+NameError: global name 'log' is not defined
+
+121.49.97.10:54945 - - [11/Sep/2014 21:58:03] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:49540 - - [11/Sep/2014 21:58:26] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:58587 - - [11/Sep/2014 22:00:17] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:40675 - - [11/Sep/2014 22:00:45] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:52421 - - [11/Sep/2014 22:05:56] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:34789 - - [11/Sep/2014 22:06:13] "HTTP/1.1 POST /api" - 200 OK
+Traceback (most recent call last):
+  File "/home/ch/camera-client/main.py", line 111, in <module>
+    app.run()
+  File "/usr/lib64/python2.7/site-packages/web/application.py", line 313, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/usr/lib64/python2.7/site-packages/web/wsgi.py", line 54, in runwsgi
+    return httpserver.runsimple(func, validip(listget(sys.argv, 1, '')))
+  File "/usr/lib64/python2.7/site-packages/web/httpserver.py", line 157, in runsimple
+    server.start()
+  File "/usr/lib64/python2.7/site-packages/web/wsgiserver/__init__.py", line 1765, in start
+    self.tick()
+  File "/usr/lib64/python2.7/site-packages/web/wsgiserver/__init__.py", line 1800, in tick
+    s, addr = self.socket.accept()
+  File "/usr/lib64/python2.7/socket.py", line 202, in accept
+    sock, addr = self._sock.accept()
+  File "/home/ch/camera-client/main.py", line 61, in exit_handler
+    thread = globalthreads[0]
+IndexError: list index out of range
+121.49.97.10:47356 - - [11/Sep/2014 22:10:42] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:50589 - - [11/Sep/2014 22:11:02] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:36735 - - [11/Sep/2014 22:14:12] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:51586 - - [11/Sep/2014 22:15:03] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:58121 - - [11/Sep/2014 22:15:33] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:53594 - - [11/Sep/2014 22:16:02] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:43111 - - [11/Sep/2014 22:18:32] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:39018 - - [11/Sep/2014 22:19:25] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:43515 - - [11/Sep/2014 22:25:17] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:56812 - - [11/Sep/2014 22:26:03] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:44308 - - [11/Sep/2014 22:32:52] "HTTP/1.1 POST /api" - 200 OK
+rm: cannot remove `/home/ch/camera-client/tmp/jpgs': Is a directory
+121.49.97.10:40200 - - [11/Sep/2014 22:33:13] "HTTP/1.1 POST /api" - 200 OK
+113.240.243.178:16328 - - [11/Sep/2014 22:36:09] "HTTP/1.1 POST api" - 200 OK
+121.49.97.10:56806 - - [11/Sep/2014 22:36:15] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:39903 - - [11/Sep/2014 22:37:57] "HTTP/1.1 POST /api" - 200 OK
+rm: cannot remove `/home/ch/camera-client/tmp/jpgs': Is a directory
+121.49.97.10:36616 - - [11/Sep/2014 22:38:21] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:51424 - - [11/Sep/2014 22:38:36] "HTTP/1.1 POST /api" - 200 OK
+rm: cannot remove `/home/ch/camera-client/tmp/jpgs': Is a directory
+121.49.97.10:34335 - - [11/Sep/2014 22:39:48] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:60309 - - [11/Sep/2014 22:40:26] "HTTP/1.1 POST /api" - 200 OK
+rm: cannot remove `/home/ch/camera-client/tmp/jpgs': Is a directory
+121.49.97.10:36975 - - [11/Sep/2014 22:41:07] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:33153 - - [11/Sep/2014 22:42:37] "HTTP/1.1 POST /api" - 200 OK
+rm: cannot remove `/home/ch/camera-client/tmp/jpgs': Is a directory
+121.49.97.10:35664 - - [11/Sep/2014 22:43:05] "HTTP/1.1 POST /api" - 200 OK
+113.240.243.178:16357 - - [11/Sep/2014 22:44:53] "HTTP/1.1 POST api" - 200 OK
+121.49.97.10:42156 - - [11/Sep/2014 22:46:30] "HTTP/1.1 POST /api" - 200 OK
+rm: cannot remove `/home/ch/camera-client/tmp/jpgs': Is a directory
+121.49.97.10:52355 - - [11/Sep/2014 22:49:47] "HTTP/1.1 POST /api" - 200 OK
+121.49.97.10:47422 - - [11/Sep/2014 22:51:16] "HTTP/1.1 POST /api" - 200 OK
+rm: cannot remove `/home/ch/camera-client/tmp/jpgs': Is a directory
+121.49.97.10:60544 - - [11/Sep/2014 22:52:12] "HTTP/1.1 POST /api" - 200 OK
+121.48.173.136:61180 - - [11/Sep/2014 23:15:07] "HTTP/1.1 POST /api" - 200 OK
+rm: cannot remove `/home/ch/camera-client/tmp/jpgs': Is a directory
+121.48.173.136:62146 - - [11/Sep/2014 23:16:41] "HTTP/1.1 POST /api" - 200 OK

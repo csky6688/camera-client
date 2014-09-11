@@ -34,10 +34,35 @@ def exit_handler(signal, frame):
         msg = "deviceid=%d" % int(everyone)
         sendRequest(msg, SERVER_IP, SERVER_PORT, record_stop_api, "POST")
 
+    for everyone in socketmap:
+        child = socketmap[everyone]
+        try:
+            socketmap[everyone] = "STOP"
+            child.kill()
+        except Exception, e:
+            print str(e)
+
+    for everyone in phonelivemap:
+        child = phonelivemap[everyone]
+        try:
+            phonelivemap[everyone] = "STOP"
+            child.terminate()
+        except Exception, e:
+            print str(e)
+
+    for everyone in phonerecordmap:
+        child = phonerecordmap[everyone]
+        try:
+            phonerecordmap[everyone] = "STOP"
+            child.terminate()
+        except Exception, e:
+            print str(e)
+
     thread = globalthreads[0]
     thread.running = False
     thread.join()
     thread.runonce()
+    PhoneRecordPublisher().runonce()
     #随后无条件杀死
     f = open(PIDFILE, "r")
     pid = int(f.readline())
@@ -84,4 +109,5 @@ if __name__ == "__main__":
     recordfilethread = saveRecordFileThread()
     globalthreads.append(recordfilethread)
     recordfilethread.start()
+    PhoneRecordPublisher().runonce()
     app.run()

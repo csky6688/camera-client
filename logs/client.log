@@ -8,3 +8,96 @@
 2014-09-09 20:59:06,638 INFO DELETE FROM devices WHERE deviceid = '154';
 2014-09-09 21:07:10,513 INFO DELETE FROM devices WHERE deviceid = '155';
 2014-09-09 21:11:28,595 INFO DELETE FROM devices WHERE deviceid = '156';
+2014-09-11 21:35:48,134 INFO execv() arg 2 must contain only strings
+2014-09-11 21:36:14,805 INFO execv() arg 2 must contain only strings
+2014-09-11 21:49:22,323 INFO index instance has no attribute 'deviceid'
+2014-09-11 21:55:45,091 INFO global name 'videopath' is not defined
+2014-09-11 21:58:03,348 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:06,352 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:09,354 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:12,358 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:15,361 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:18,364 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:21,367 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:24,371 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:27,374 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:30,377 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:33,381 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:36,384 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:39,387 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:42,391 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:45,394 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:48,398 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:51,401 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:54,405 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:58:57,409 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:00,412 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:03,416 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:06,417 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:09,421 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:12,424 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:15,427 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:18,431 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:21,434 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:24,438 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:27,441 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:30,444 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:33,447 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:36,451 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:39,454 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:42,458 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:45,461 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:48,464 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:51,468 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:54,471 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 21:59:57,475 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 22:10:19,341 INFO invalid literal for int() with base 10: 'test.mp4'
+2014-09-11 22:10:22,345 INFO invalid literal for int() with base 10: 'test.mp4'
+2014-09-11 22:10:25,349 INFO invalid literal for int() with base 10: 'test.mp4'
+2014-09-11 22:10:28,352 INFO invalid literal for int() with base 10: 'test.mp4'
+2014-09-11 22:10:43,368 INFO global name 'true' is not defined
+2014-09-11 22:10:46,370 INFO global name 'true' is not defined
+2014-09-11 22:10:49,373 INFO global name 'true' is not defined
+2014-09-11 22:10:52,374 INFO global name 'true' is not defined
+2014-09-11 22:10:55,377 INFO global name 'true' is not defined
+2014-09-11 22:10:58,381 INFO global name 'true' is not defined
+2014-09-11 22:11:01,385 INFO global name 'true' is not defined
+2014-09-11 22:11:02,001 INFO 157
+2014-09-11 22:11:04,388 INFO global name 'true' is not defined
+2014-09-11 22:11:07,392 INFO global name 'true' is not defined
+2014-09-11 22:11:10,394 INFO global name 'true' is not defined
+2014-09-11 22:11:13,398 INFO global name 'true' is not defined
+2014-09-11 22:11:16,401 INFO global name 'true' is not defined
+2014-09-11 22:11:19,405 INFO global name 'true' is not defined
+2014-09-11 22:11:22,409 INFO global name 'true' is not defined
+2014-09-11 22:11:25,412 INFO global name 'true' is not defined
+2014-09-11 22:11:28,416 INFO global name 'true' is not defined
+2014-09-11 22:11:31,419 INFO global name 'true' is not defined
+2014-09-11 22:11:34,423 INFO global name 'true' is not defined
+2014-09-11 22:11:37,427 INFO global name 'true' is not defined
+2014-09-11 22:11:40,430 INFO global name 'true' is not defined
+2014-09-11 22:11:43,434 INFO global name 'true' is not defined
+2014-09-11 22:11:46,437 INFO global name 'true' is not defined
+2014-09-11 22:11:49,440 INFO global name 'true' is not defined
+2014-09-11 22:11:52,441 INFO global name 'true' is not defined
+2014-09-11 22:11:55,444 INFO global name 'true' is not defined
+2014-09-11 22:11:58,448 INFO global name 'true' is not defined
+2014-09-11 22:12:01,451 INFO global name 'true' is not defined
+2014-09-11 22:12:04,455 INFO global name 'true' is not defined
+2014-09-11 22:12:07,459 INFO global name 'true' is not defined
+2014-09-11 22:12:10,462 INFO global name 'true' is not defined
+2014-09-11 22:12:13,466 INFO global name 'true' is not defined
+2014-09-11 22:12:16,469 INFO global name 'true' is not defined
+2014-09-11 22:12:19,471 INFO global name 'true' is not defined
+2014-09-11 22:12:22,474 INFO global name 'true' is not defined
+2014-09-11 22:12:25,478 INFO global name 'true' is not defined
+2014-09-11 22:12:28,482 INFO global name 'true' is not defined
+2014-09-11 22:26:03,182 INFO global name 'os' is not defined
+2014-09-11 22:26:38,733 INFO global name 'os' is not defined
+2014-09-11 22:27:14,118 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 22:27:56,161 INFO invalid literal for int() with base 10: '157.mp4'
+2014-09-11 22:27:58,411 INFO global name 'subprocess' is not defined
+2014-09-11 22:28:13,427 INFO global name 'subprocess' is not defined
+2014-09-11 22:28:20,857 INFO global name 'time' is not defined
+2014-09-11 22:28:50,885 INFO global name 'time' is not defined
+2014-09-11 22:44:53,046 INFO DELETE FROM devices WHERE deviceid = '159';
