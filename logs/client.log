@@ -101,3 +101,7 @@
 2014-09-11 22:28:20,857 INFO global name 'time' is not defined
 2014-09-11 22:28:50,885 INFO global name 'time' is not defined
 2014-09-11 22:44:53,046 INFO DELETE FROM devices WHERE deviceid = '159';
+2014-09-12 11:32:34,330 INFO [Errno 2] No such file or directory: '/home/runner/www/videos/phone/'
+2014-09-12 11:40:19,372 INFO [Errno 110] Connection timed out
+2014-09-12 11:45:05,069 INFO [Errno 110] Connection timed out
+2014-09-12 11:54:23,943 INFO DELETE FROM devices WHERE deviceid = '157';

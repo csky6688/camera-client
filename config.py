@@ -5,9 +5,9 @@ import logging
 import MySQLdb
 
 DB_HOST =       "localhost"
-DB_NAME =       "cameraclient"
-DB_USER =       "camera"
-DB_PASSWORD =   "camera"
+DB_NAME =       "camera-client"
+DB_USER =       "root"
+DB_PASSWORD =   "root"
 DB_CHARSET =    "utf8"
 site_prefix = ""
 
@@ -20,9 +20,9 @@ urls = (
     site_prefix + '/api',             'api.index',
 )
 
-FFMPEG_BIN = "/home/ch/ffmpeg/ffmpeg"
-FFPROBE_BIN = "/home/ch/ffmpeg/ffprobe"
-PROGRAM_ROOT = "/home/ch/camera-client/"
+FFMPEG_BIN = "/home/runner/ffmpeg/ffmpeg"
+FFPROBE_BIN = "/home/runner/ffmpeg/ffprobe"
+PROGRAM_ROOT = "/home/runner/camera-client/"
 
 PHONE_RECEIVER = PROGRAM_ROOT + "phonereceiver.py"
 TEMP_DIR = PROGRAM_ROOT + "tmp/"
@@ -31,13 +31,13 @@ CAMERA_LOG = PROGRAM_ROOT + "logs/"
 logfile = PROGRAM_ROOT + "logs/client.log"
 LOG_LEVEL = logging.DEBUG
 PIDFILE = PROGRAM_ROOT + "camera-client.pid"
-VIDEO_PATH = "/home/ch/www/videos/"
+VIDEO_PATH = "/home/runner/www/videos/"
 
 MYSQL_CONNECT_CMD = "MySQLdb.connect(host = DB_HOST, user = DB_USER, passwd = DB_PASSWORD, db = DB_NAME, charset = DB_CHARSET)"
 
 RECORD_INTERVAL = 3600     
-SERVER_IP = "113.240.243.180"
-LOCAL_IP = "222.197.182.130"
+SERVER_IP = "127.0.0.1"
+LOCAL_IP = "113.240.243.180"
 SERVER_PORT = 8087
 LOCAL_PORT = 8086
 RTMP_PORT = 8085
