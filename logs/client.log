@@ -105,3 +105,22 @@
 2014-09-12 11:40:19,372 INFO [Errno 110] Connection timed out
 2014-09-12 11:45:05,069 INFO [Errno 110] Connection timed out
 2014-09-12 11:54:23,943 INFO DELETE FROM devices WHERE deviceid = '157';
+2014-09-17 20:29:01,785 INFO 177
+2014-09-17 20:30:25,865 INFO 177
+2014-09-17 20:30:26,363 INFO ['python', '/home/runner/camera-client/phonereceiver.py', '-deviceid', '177', '-port', '9177']
+2014-09-17 20:31:10,165 INFO [Errno 2] No such file or directory: '/home/runner/www/videos/phone/177/177.mp4'
+2014-09-17 20:31:35,932 INFO ['python', '/home/runner/camera-client/phonereceiver.py', '-deviceid', '177', '-port', '9177']
+2014-09-17 20:31:58,238 INFO ['python', '/home/runner/camera-client/phonereceiver.py', '-deviceid', '177', '-port', '9177']
+2014-09-17 20:32:12,076 INFO [Errno 2] No such file or directory: '/home/runner/www/videos/phone/177/177.mp4'
+2014-09-17 20:33:18,473 INFO DELETE FROM devices WHERE deviceid = '177';
+2014-09-17 20:35:11,688 INFO ['python', '/home/runner/camera-client/phonereceiver.py', '-deviceid', '178', '-port', '9178']
+2014-09-17 20:37:44,288 INFO DELETE FROM devices WHERE deviceid = '178';
+2014-09-17 20:45:50,944 INFO DELETE FROM devices WHERE deviceid = '180';
+2014-09-17 20:50:42,752 INFO DELETE FROM devices WHERE deviceid = '181';
+2014-09-17 20:56:20,640 INFO DELETE FROM devices WHERE deviceid = '182';
+2014-09-17 20:56:25,711 INFO DELETE FROM devices WHERE deviceid = '179';
+2014-09-17 21:31:13,336 INFO DELETE FROM devices WHERE deviceid = '184';
+2014-09-17 21:36:54,250 INFO DELETE FROM devices WHERE deviceid = '185';
+2014-09-17 21:43:49,475 INFO DELETE FROM devices WHERE deviceid = '186';
+2014-09-17 21:52:45,400 INFO DELETE FROM devices WHERE deviceid = '187';
+2014-09-18 00:25:55,686 INFO DELETE FROM devices WHERE deviceid = '188';

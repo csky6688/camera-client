@@ -93,7 +93,6 @@ class index:
             elif method == "startPhone":
                 deviceid = int(web.input().deviceid)       
                 port = int("9" + str(deviceid))
-
                 sock_cmd = [
                     "python", PHONE_RECEIVER,
                     '-deviceid', str(deviceid),

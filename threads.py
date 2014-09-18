@@ -133,7 +133,7 @@ class recordThread(threading.Thread):
             while (now % RECORD_INTERVAL) != 0:
                 duration += 1
                 now += 1
-            duration += 10
+            duration += 20
 
             self.cmd = [
                 FFMPEG_BIN, 
