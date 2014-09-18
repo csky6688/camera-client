@@ -130,10 +130,10 @@ class recordThread(threading.Thread):
             now = int(time.time())
             #获取当前距离最近一个时间点的秒数
             duration = 0
-            while (now % RECORD_INTERVAL) != 0:
+            while (now % RECORD_INTERVAL) != 0 or duration < (RECORD_INTERVAL / 2):
                 duration += 1
                 now += 1
-            duration += 20
+            #duration += 60
 
             self.cmd = [
                 FFMPEG_BIN, 
