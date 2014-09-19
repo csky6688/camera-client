@@ -71,13 +71,13 @@ class liveThread(threading.Thread):
         self.deviceid = deviceid 
         self.rtmp = rtmp
         self.cmd = [
-            FFMPEG_BIN, 
+            FFMPEG_BIN,
+            '-stimeout', '5000000', 
             '-rtsp_transport', 'tcp',
             '-i', rtsp,
             '-c', 'copy',
             '-map', '0:0',
             '-f', 'flv',
-            '-t', '3600',
             '-an',
             'rtmp://127.0.0.1:' + str(RTMP_PORT) + '/live/camera-' + str(deviceid)
         ]
@@ -137,6 +137,7 @@ class recordThread(threading.Thread):
 
             self.cmd = [
                 FFMPEG_BIN, 
+                '-stimeout', '5000000', 
                 '-rtsp_transport', 'tcp',
                 '-i', self.rtsp,
                 '-c', 'copy',
