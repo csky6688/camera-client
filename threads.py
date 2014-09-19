@@ -77,6 +77,7 @@ class liveThread(threading.Thread):
             '-c', 'copy',
             '-map', '0:0',
             '-f', 'flv',
+            '-t', '3600',
             '-an',
             'rtmp://127.0.0.1:' + str(RTMP_PORT) + '/live/camera-' + str(deviceid)
         ]
@@ -102,7 +103,6 @@ class liveThread(threading.Thread):
             #os.rename(logfile, logfile + '-' + str(child.pid))
             if livemap[self.deviceid] == "STOP":
                 break
-            time.sleep(5)
 
     def requestPending(self):
         msg = "deviceid=%d&url=%s" % (self.deviceid, self.rtmp)

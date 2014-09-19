@@ -1838,3 +1838,135 @@ rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
 127.0.0.1:39709 - - [18/Sep/2014 19:03:43] "HTTP/1.1 POST api" - 200 OK
 127.0.0.1:39716 - - [18/Sep/2014 19:03:50] "HTTP/1.1 POST api" - 200 OK
 127.0.0.1:39719 - - [18/Sep/2014 19:03:52] "HTTP/1.1 POST api" - 200 OK
+125.71.229.164:54368 - - [18/Sep/2014 20:26:43] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.164:36245 - - [18/Sep/2014 20:27:37] "HTTP/1.1 POST /api" - 200 OK
+127.0.0.1:39948 - - [19/Sep/2014 12:57:58] "HTTP/1.1 POST api" - 200 OK
+125.71.229.23:47749 - - [19/Sep/2014 12:58:13] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:47935 - - [19/Sep/2014 12:58:40] "HTTP/1.1 POST /api" - 200 OK
+171.208.221.92:38280 - - [19/Sep/2014 12:59:10] "HTTP/1.1 POST /api" - 200 OK
+171.208.221.92:24280 - - [19/Sep/2014 12:59:53] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+171.208.221.92:41077 - - [19/Sep/2014 13:00:39] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.23:47996 - - [19/Sep/2014 13:00:41] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs/*": 没有那个文件或目录
+125.71.229.23:48171 - - [19/Sep/2014 13:01:06] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.23:48171 - - [19/Sep/2014 13:01:09] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs/*": 没有那个文件或目录
+125.71.229.23:48268 - - [19/Sep/2014 13:01:24] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.23:48364 - - [19/Sep/2014 13:02:08] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:48566 - - [19/Sep/2014 13:02:35] "HTTP/1.1 POST /api" - 200 OK
+127.0.0.1:40007 - - [19/Sep/2014 13:08:47] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40008 - - [19/Sep/2014 13:09:06] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40009 - - [19/Sep/2014 13:13:39] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40010 - - [19/Sep/2014 13:13:59] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40011 - - [19/Sep/2014 13:14:06] "HTTP/1.1 POST api" - 200 OK
+125.71.229.23:48913 - - [19/Sep/2014 13:14:39] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs/*": 没有那个文件或目录
+125.71.229.23:48913 - - [19/Sep/2014 13:14:40] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs/*": 没有那个文件或目录
+125.71.229.23:49131 - - [19/Sep/2014 13:15:04] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs/*": 没有那个文件或目录
+125.71.229.23:49131 - - [19/Sep/2014 13:15:05] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs/*": 没有那个文件或目录
+125.71.229.23:49131 - - [19/Sep/2014 13:15:09] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs/*": 没有那个文件或目录
+125.71.229.23:49279 - - [19/Sep/2014 13:15:20] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.23:49279 - - [19/Sep/2014 13:15:21] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:49279 - - [19/Sep/2014 13:15:27] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs/*": 没有那个文件或目录
+125.71.229.23:49279 - - [19/Sep/2014 13:15:28] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs/*": 没有那个文件或目录
+125.71.229.23:24508 - - [19/Sep/2014 13:15:44] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.23:24508 - - [19/Sep/2014 13:15:45] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:49621 - - [19/Sep/2014 13:16:09] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs/*": 没有那个文件或目录
+125.71.229.23:49621 - - [19/Sep/2014 13:16:15] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.23:49746 - - [19/Sep/2014 13:19:34] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:49940 - - [19/Sep/2014 13:19:56] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.23:49977 - - [19/Sep/2014 13:21:29] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:51461 - - [19/Sep/2014 13:21:54] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.164:39140 - - [19/Sep/2014 13:24:51] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.164:46028 - - [19/Sep/2014 13:25:16] "HTTP/1.1 POST /api" - 200 OK
+127.0.0.1:40024 - - [19/Sep/2014 13:27:31] "HTTP/1.1 POST api" - 200 OK
+125.71.229.23:50956 - - [19/Sep/2014 13:27:47] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:51088 - - [19/Sep/2014 13:28:11] "HTTP/1.1 POST /api" - 200 OK
+127.0.0.1:40027 - - [19/Sep/2014 13:28:36] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40028 - - [19/Sep/2014 13:28:46] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40080 - - [19/Sep/2014 13:36:50] "HTTP/1.1 POST api" - 200 OK
+125.71.229.23:51560 - - [19/Sep/2014 13:37:14] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:51793 - - [19/Sep/2014 13:37:51] "HTTP/1.1 POST /api" - 200 OK
+127.0.0.1:40091 - - [19/Sep/2014 13:38:51] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40092 - - [19/Sep/2014 13:39:07] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40157 - - [19/Sep/2014 14:07:18] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40158 - - [19/Sep/2014 14:07:24] "HTTP/1.1 POST api" - 200 OK
+125.71.229.164:35439 - - [19/Sep/2014 14:26:08] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.164:38029 - - [19/Sep/2014 14:26:30] "HTTP/1.1 POST /api" - 200 OK
+119.4.252.143:41060 - - [19/Sep/2014 14:26:42] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+119.4.252.143:41061 - - [19/Sep/2014 14:27:06] "HTTP/1.1 POST /api" - 200 OK
+119.4.252.143:41061 - - [19/Sep/2014 14:27:16] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+119.4.252.143:41062 - - [19/Sep/2014 14:27:40] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.164:43284 - - [19/Sep/2014 14:27:47] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.164:59369 - - [19/Sep/2014 14:28:06] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.164:59369 - - [19/Sep/2014 14:28:10] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.164:54348 - - [19/Sep/2014 14:28:31] "HTTP/1.1 POST /api" - 200 OK
+127.0.0.1:40199 - - [19/Sep/2014 16:01:07] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40200 - - [19/Sep/2014 16:01:19] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40201 - - [19/Sep/2014 16:08:11] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40202 - - [19/Sep/2014 16:08:18] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40203 - - [19/Sep/2014 16:08:25] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40222 - - [19/Sep/2014 16:08:53] "HTTP/1.1 POST api" - 200 OK
+125.71.229.23:55900 - - [19/Sep/2014 16:09:26] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:56027 - - [19/Sep/2014 16:09:46] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.23:20690 - - [19/Sep/2014 19:55:50] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:5716 - - [19/Sep/2014 19:56:16] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.23:5795 - - [19/Sep/2014 19:57:48] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:5996 - - [19/Sep/2014 19:58:07] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.23:7709 - - [19/Sep/2014 20:26:39] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:7886 - - [19/Sep/2014 20:26:58] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.23:8922 - - [19/Sep/2014 20:35:17] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:9098 - - [19/Sep/2014 20:35:36] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.23:9148 - - [19/Sep/2014 20:35:55] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:9271 - - [19/Sep/2014 20:36:13] "HTTP/1.1 POST /api" - 200 OK
+125.71.229.23:9385 - - [19/Sep/2014 20:36:48] "HTTP/1.1 POST /api" - 200 OK
+rm: 无法删除"/home/runner/camera-client/tmp/jpgs": 是一个目录
+125.71.229.23:26130 - - [19/Sep/2014 20:37:15] "HTTP/1.1 POST /api" - 200 OK
+127.0.0.1:40301 - - [19/Sep/2014 20:40:37] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40303 - - [19/Sep/2014 20:40:38] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40305 - - [19/Sep/2014 20:40:40] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40307 - - [19/Sep/2014 20:41:38] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40310 - - [19/Sep/2014 20:41:40] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40324 - - [19/Sep/2014 20:57:22] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40327 - - [19/Sep/2014 20:57:25] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40334 - - [19/Sep/2014 20:57:36] "HTTP/1.1 POST api" - 200 OK
+127.0.0.1:40337 - - [19/Sep/2014 20:57:38] "HTTP/1.1 POST api" - 200 OK
