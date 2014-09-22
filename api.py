@@ -12,7 +12,7 @@ class index:
             method = str(web.input().method)
             if method == "add":
                 deviceid = int(web.input().deviceid)
-                rtsp = str(web.input().rtsp)
+                rtsp = str(web.input().rtsp).replace("#", "&")
                 db = eval(MYSQL_CONNECT_CMD)
                 cursor = db.cursor()
                 cmd = "INSERT INTO devices(deviceid, rtsp) VALUES (%d, '%s');" % (deviceid, rtsp)
@@ -21,7 +21,7 @@ class index:
 
             elif method == "update":
                 deviceid = int(web.input().deviceid)
-                rtsp = str(web.input().rtsp)
+                rtsp = str(web.input().rtsp).replace("#", "&")
                 db = eval(MYSQL_CONNECT_CMD)
                 cursor = db.cursor()
                 cmd = "UPDATE devices SET rtsp = '%s' WHERE deviceid = %d;" % (rtsp, deviceid)

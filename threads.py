@@ -72,7 +72,7 @@ class liveThread(threading.Thread):
         self.rtmp = rtmp
         self.cmd = [
             FFMPEG_BIN,
-            '-stimeout', '5000000', 
+            '-stimeout', '3000000', 
             '-rtsp_transport', 'tcp',
             '-i', rtsp,
             '-c', 'copy',
@@ -137,7 +137,7 @@ class recordThread(threading.Thread):
 
             self.cmd = [
                 FFMPEG_BIN, 
-                '-stimeout', '5000000', 
+                '-stimeout', '3000000', 
                 '-rtsp_transport', 'tcp',
                 '-i', self.rtsp,
                 '-c', 'copy',
