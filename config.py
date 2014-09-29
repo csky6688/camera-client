@@ -52,6 +52,8 @@ record_pending_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?metho
 record_started_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordstarted"
 record_stop_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordstop"
 record_file_ready_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=recordfileready"
+get_devices_info_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=getDevices"
+delete_records_api = "http://" +SERVER_IP + ":" + str(SERVER_PORT) + "/api?method=deleteRecords"
 
 livemap = {}
 recordmap = {}
