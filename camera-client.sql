@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2015-03-10 13:44:05
+-- Generation Time: 2015-03-10 13:57:16
 -- 服务器版本： 5.5.38-0ubuntu0.12.04.1
 -- PHP Version: 5.3.10-1ubuntu3.14
 
